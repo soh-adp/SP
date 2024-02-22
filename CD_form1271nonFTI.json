@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_form1271nonFTI.json",
+  "title": "SP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": false,
+  "definitions": {
+    "form1271nonFTI": {
+      "$id": "#form1271nonFTI",
+      "title": "form-1271-nonFTI",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "06650d6d-2e7f-42b2-aa35-7e05d2bb74be",
+            "defaultRetentionPeriod": "Indefinite",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {}
+        }
+      ]
+    }
+  }
+}

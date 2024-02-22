@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/SP/CD_form1461.json",
+    "title": "SP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": true,
+    "definitions": {
+        "form1461": {
+            "$id": "#form1461",
+            "title": "[feb] form-1461",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "cbb9e734-0c04-4a45-be8e-61af9740cb63",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "ClaimantsSignature": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ClaimantsSignature",
+                                    "caKeyClassId": "3aed4a12-192f-46d6-86e6-52babf7aff46",
+                                    "caValueType": "signature"
+                                }
+                            ]
+                        },
+                        "ForDepartmentUseOnly": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ForDepartmentUseOnly",
+                                    "caKeyClassId": "29cf6d7a-ffa2-47e9-ba88-bdc31e5d7aab",
+                                    "caValueType": "composite",
+                                    "caComplexKeyMapping": {
+                                        "Physical": {
+                                            "caKeyClassName": "Physical",
+                                            "caKeyClassId": "889bc3e9-0594-46c3-91a5-b1cfa37b975e"
+                                        },
+                                        "Psych": {
+                                            "caKeyClassName": "Psych",
+                                            "caKeyClassId": "bd7fcf30-9d2c-4200-a7dc-7f72cf09b391"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "FTIKeyword": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "5da10011-4926-4f17-97ee-960b94305fb6",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ClientFullName": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ClientFullName",
+                                    "caKeyClassId": "b745bc73-42e3-421f-b2b2-703d11e435f0",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

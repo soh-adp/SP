@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_form1271FTI.json",
+  "title": "SP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": false,
+  "definitions": {
+    "form1271FTI": {
+      "$id": "#form1271FTI",
+      "title": "form-1271-FTI",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "2814deef-f207-49d3-b4f6-6d97d30ddbdb",
+            "defaultRetentionPeriod": "Indefinite",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {
+            "test": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "test",
+                  "caKeyClassId": "bc3b30f3-7b69-47de-9adf-36a62ca484e5",
+                  "caValueType": "text"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

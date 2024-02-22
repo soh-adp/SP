@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1257.json",
+    "title": "SP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": true,
+    "definitions": {
+        "febform1257": {
+            "$id": "#febform1257",
+            "title": "[feb] form-1257",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "FullName": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "FullName",
+                                    "caKeyClassId": "c7401ef8-2640-4ff5-af60-ac87f36e4204",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "FTIKeyword": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "707f04e7-8090-4e3f-bf08-396da6f93796",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "Unit": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Unit",
+                                    "caKeyClassId": "baece483-df6d-4b8d-aaef-cbf77d0090c7",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "CaseNumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "CaseNumber",
+                                    "caKeyClassId": "0bccfb66-5d9e-48eb-87c9-3eb282b5841e",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "ParticipationStatus": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ParticipationStatus",
+                                    "caKeyClassId": "fa3af9d9-8fd8-4afb-8ad9-525298c8c48d",
+                                    "caValueType": "composite",
+                                    "caComplexKeyMapping": {
+                                        "DidnotmeetcomplianceperioddenyTANF": {
+                                            "caKeyClassName": "DidnotmeetcomplianceperioddenyTANF",
+                                            "caKeyClassId": "44e4171d-f2e9-41a1-b112-52e1318e8952"
+                                        },
+                                        "MetcomplianceperiodapproveTANF": {
+                                            "caKeyClassName": "MetcomplianceperiodapproveTANF",
+                                            "caKeyClassId": "5b92697f-a359-4c8c-8134-6da7b9de45a6"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

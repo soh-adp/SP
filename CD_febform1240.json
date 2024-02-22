@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1240.json",
+    "title": "SP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": false,
+    "definitions": {
+        "febform1240": {
+            "$id": "#febform1240",
+            "title": "[feb] form-1240",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "646496af-248a-433d-bf0a-7395e4cf3c4d",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {}
+                }
+            ]
+        }
+    }
+}

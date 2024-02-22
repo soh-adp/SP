@@ -1,0 +1,107 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/SP/CD_febform806.json",
+    "title": "SP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": true,
+    "definitions": {
+        "febform806": {
+            "$id": "#febform806",
+            "title": "[feb] form-806",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "a6bfccce-603c-440b-a8e4-207ed2781c16",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "EMail": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "EMail",
+                                    "caKeyClassId": "0bcf9b4c-a1f7-45fe-a8c8-40ecb3d3024e",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "ClientID": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ClientID",
+                                    "caKeyClassId": "64e90561-903a-494f-86ca-ce687749c801",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "FullName": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "FullName",
+                                    "caKeyClassId": "d093e24e-3eef-4334-b5e4-879ca749fd49",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Signature": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Signature",
+                                    "caKeyClassId": "56ac57e8-c7cd-4086-b84b-e4a8b8b19db4",
+                                    "caValueType": "signature"
+                                }
+                            ]
+                        },
+                        "Unit": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Unit",
+                                    "caKeyClassId": "5f86b8ce-2a1b-4fd8-906b-003d81bce8e8",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "FTIKeyword": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "8c8a99c6-bd3a-4a80-9df7-7c6f4e9d858e",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
