@@ -17,9 +17,9 @@
     }
   },
   "snapshotRecord": {
-    "snapshotName": "v2-2024-02-22-2244",
-    "baVersionId": "85f718f5-aaac-4dab-8e1a-388852d547ac",
-    "date": "2024-02-22T22:45:04.640Z",
-    "status": "success"
+    "snapshotName": "v3-2024-02-22-2259",
+    "baVersionId": "3c01b49f-4578-4f0c-becc-6dbf83d16ad1",
+    "date": "2024-02-22T22:59:12.873Z",
+    "status": "inProgress"
   }
 }
