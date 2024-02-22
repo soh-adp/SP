@@ -375,139 +375,19 @@
               "attrContext": {
                 "AttrAliasList": [
                   {
-                    "AttrAliasName": "Psychiatrist",
+                    "AttrAliasName": "Clinical Social Worker",
                     "Language": "en"
                   }
                 ],
                 "PatternList": []
               },
-              "attrId": "070a1fd2-699f-470e-b825-cba822beae72",
-              "attrName": "Psychiatrist",
-              "attrRef": "SHDHSFT.TypeofProvider.Psychiatrist",
+              "attrId": "764fc98c-6159-4ff3-ba6c-56f47a5afee7",
+              "attrName": "ClinicalSocialWorker",
+              "attrRef": "SHDHSFT.TypeofProvider.ClinicalSocialWorker",
               "cardinality": "single",
               "comment": "",
               "creationDate": "2024-02-22 23:03:09.086401",
-              "displayName": "Psychiatrist",
-              "localizationNames": null,
-              "mandatory": 0,
-              "sensitive": false,
-              "validatorList": [
-                {
-                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
-                  "implRef": "sys.Boolean.LowConfidenceValidator"
-                },
-                {
-                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
-                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                },
-                {
-                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
-                  "implRef": "sys.Boolean.RequiredValueValidator"
-                }
-              ],
-              "validatorLogic": {
-                "AND": [
-                  {
-                    "implRef": "sys.Boolean.LowConfidenceValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.RequiredValueValidator"
-                  }
-                ]
-              },
-              "valueFormats": {
-                "checkbox": {
-                  "extractorList": [],
-                  "extractorSequence": [],
-                  "converterList": [],
-                  "converterSequence": [],
-                  "formatterList": [],
-                  "formatterSequence": []
-                }
-              }
-            },
-            {
-              "DataFixup": true,
-              "ValueRegion": "text",
-              "attrContext": {
-                "AttrAliasList": [
-                  {
-                    "AttrAliasName": "Psychologist",
-                    "Language": "en"
-                  }
-                ],
-                "PatternList": []
-              },
-              "attrId": "0e53f9c9-6143-4a24-8d53-92452a3bc3a1",
-              "attrName": "Psychologist",
-              "attrRef": "SHDHSFT.TypeofProvider.Psychologist",
-              "cardinality": "single",
-              "comment": "",
-              "creationDate": "2024-02-22 23:03:09.086401",
-              "displayName": "Psychologist",
-              "localizationNames": null,
-              "mandatory": 0,
-              "sensitive": false,
-              "validatorList": [
-                {
-                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
-                  "implRef": "sys.Boolean.LowConfidenceValidator"
-                },
-                {
-                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
-                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                },
-                {
-                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
-                  "implRef": "sys.Boolean.RequiredValueValidator"
-                }
-              ],
-              "validatorLogic": {
-                "AND": [
-                  {
-                    "implRef": "sys.Boolean.LowConfidenceValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.RequiredValueValidator"
-                  }
-                ]
-              },
-              "valueFormats": {
-                "checkbox": {
-                  "extractorList": [],
-                  "extractorSequence": [],
-                  "converterList": [],
-                  "converterSequence": [],
-                  "formatterList": [],
-                  "formatterSequence": []
-                }
-              }
-            },
-            {
-              "DataFixup": true,
-              "ValueRegion": "text",
-              "attrContext": {
-                "AttrAliasList": [
-                  {
-                    "AttrAliasName": "Physician",
-                    "Language": "en"
-                  }
-                ],
-                "PatternList": []
-              },
-              "attrId": "66b1abb2-202e-4b22-ace1-efa4650455ec",
-              "attrName": "Physician",
-              "attrRef": "SHDHSFT.TypeofProvider.Physician",
-              "cardinality": "single",
-              "comment": "",
-              "creationDate": "2024-02-22 23:03:09.086401",
-              "displayName": "Physician",
+              "displayName": "Clinical Social Worker",
               "localizationNames": null,
               "mandatory": 0,
               "sensitive": false,
@@ -615,19 +495,139 @@
               "attrContext": {
                 "AttrAliasList": [
                   {
-                    "AttrAliasName": "Clinical Social Worker",
+                    "AttrAliasName": "Physician",
                     "Language": "en"
                   }
                 ],
                 "PatternList": []
               },
-              "attrId": "764fc98c-6159-4ff3-ba6c-56f47a5afee7",
-              "attrName": "ClinicalSocialWorker",
-              "attrRef": "SHDHSFT.TypeofProvider.ClinicalSocialWorker",
+              "attrId": "66b1abb2-202e-4b22-ace1-efa4650455ec",
+              "attrName": "Physician",
+              "attrRef": "SHDHSFT.TypeofProvider.Physician",
               "cardinality": "single",
               "comment": "",
               "creationDate": "2024-02-22 23:03:09.086401",
-              "displayName": "Clinical Social Worker",
+              "displayName": "Physician",
+              "localizationNames": null,
+              "mandatory": 0,
+              "sensitive": false,
+              "validatorList": [
+                {
+                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
+                  "implRef": "sys.Boolean.LowConfidenceValidator"
+                },
+                {
+                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
+                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                },
+                {
+                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
+                  "implRef": "sys.Boolean.RequiredValueValidator"
+                }
+              ],
+              "validatorLogic": {
+                "AND": [
+                  {
+                    "implRef": "sys.Boolean.LowConfidenceValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.RequiredValueValidator"
+                  }
+                ]
+              },
+              "valueFormats": {
+                "checkbox": {
+                  "extractorList": [],
+                  "extractorSequence": [],
+                  "converterList": [],
+                  "converterSequence": [],
+                  "formatterList": [],
+                  "formatterSequence": []
+                }
+              }
+            },
+            {
+              "DataFixup": true,
+              "ValueRegion": "text",
+              "attrContext": {
+                "AttrAliasList": [
+                  {
+                    "AttrAliasName": "Psychologist",
+                    "Language": "en"
+                  }
+                ],
+                "PatternList": []
+              },
+              "attrId": "0e53f9c9-6143-4a24-8d53-92452a3bc3a1",
+              "attrName": "Psychologist",
+              "attrRef": "SHDHSFT.TypeofProvider.Psychologist",
+              "cardinality": "single",
+              "comment": "",
+              "creationDate": "2024-02-22 23:03:09.086401",
+              "displayName": "Psychologist",
+              "localizationNames": null,
+              "mandatory": 0,
+              "sensitive": false,
+              "validatorList": [
+                {
+                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
+                  "implRef": "sys.Boolean.LowConfidenceValidator"
+                },
+                {
+                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
+                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                },
+                {
+                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
+                  "implRef": "sys.Boolean.RequiredValueValidator"
+                }
+              ],
+              "validatorLogic": {
+                "AND": [
+                  {
+                    "implRef": "sys.Boolean.LowConfidenceValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.RequiredValueValidator"
+                  }
+                ]
+              },
+              "valueFormats": {
+                "checkbox": {
+                  "extractorList": [],
+                  "extractorSequence": [],
+                  "converterList": [],
+                  "converterSequence": [],
+                  "formatterList": [],
+                  "formatterSequence": []
+                }
+              }
+            },
+            {
+              "DataFixup": true,
+              "ValueRegion": "text",
+              "attrContext": {
+                "AttrAliasList": [
+                  {
+                    "AttrAliasName": "Psychiatrist",
+                    "Language": "en"
+                  }
+                ],
+                "PatternList": []
+              },
+              "attrId": "070a1fd2-699f-470e-b825-cba822beae72",
+              "attrName": "Psychiatrist",
+              "attrRef": "SHDHSFT.TypeofProvider.Psychiatrist",
+              "cardinality": "single",
+              "comment": "",
+              "creationDate": "2024-02-22 23:03:09.086401",
+              "displayName": "Psychiatrist",
               "localizationNames": null,
               "mandatory": 0,
               "sensitive": false,
