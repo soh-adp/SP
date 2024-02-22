@@ -1,30 +1,30 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1258.json",
-    "title": "SP Document Type Definitions",
-    "lastUpdatDate": "",
-    "lastUpdate": "",
-    "comment": "This is a Doc Type Definition showing some different property types",
-    "baForDeployment": false,
-    "definitions": {
-        "febform1258": {
-            "$id": "#febform1258",
-            "title": "[feb] form-1258",
-            "allOf": [
-                {
-                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
-                },
-                {
-                    "type": "object",
-                    "description": "",
-                    "baclass": {
-                        "caDocTypeId": "a6f796ff-9e53-4bd6-a9af-2399615c8420",
-                        "defaultRetentionPeriod": "Indefinite",
-                        "retentionPeriodUnits": ""
-                    },
-                    "properties": {}
-                }
-            ]
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1258.json",
+  "title": "SP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": false,
+  "definitions": {
+    "febform1258": {
+      "$id": "#febform1258",
+      "title": "[feb] form-1258",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "a6f796ff-9e53-4bd6-a9af-2399615c8420",
+            "defaultRetentionPeriod": "Indefinite",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {}
         }
+      ]
     }
+  }
 }

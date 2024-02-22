@@ -23,6 +23,18 @@
                         "retentionPeriodUnits": ""
                     },
                     "properties": {
+                        "CaseNumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "CaseNumber",
+                                    "caKeyClassId": "2338f5a7-6f5d-430b-9ee7-fea1fd534f3a",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
                         "ClientID": {
                             "allOf": [
                                 {
@@ -32,6 +44,30 @@
                                     "caKeyClassName": "ClientID",
                                     "caKeyClassId": "a0124ca2-6f38-4ab6-8d67-57adb3cb9b07",
                                     "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "ClientFullName": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ClientFullName",
+                                    "caKeyClassId": "a6d170dc-43f9-4aeb-862e-aa7a8d9741ae",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "SignatureofPatientorGuardian": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "SignatureofPatientorGuardian",
+                                    "caKeyClassId": "5b63c2e8-7070-4f41-b963-0a59dc460dea",
+                                    "caValueType": "signature"
                                 }
                             ]
                         },
@@ -60,42 +96,6 @@
                                         "string",
                                         "null"
                                     ]
-                                }
-                            ]
-                        },
-                        "CaseNumber": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "CaseNumber",
-                                    "caKeyClassId": "2338f5a7-6f5d-430b-9ee7-fea1fd534f3a",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "ClientFullName": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "ClientFullName",
-                                    "caKeyClassId": "a6d170dc-43f9-4aeb-862e-aa7a8d9741ae",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "SignatureofPatientorGuardian": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "SignatureofPatientorGuardian",
-                                    "caKeyClassId": "5b63c2e8-7070-4f41-b963-0a59dc460dea",
-                                    "caValueType": "signature"
                                 }
                             ]
                         }

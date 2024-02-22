@@ -23,34 +23,6 @@
                         "retentionPeriodUnits": ""
                     },
                     "properties": {
-                        "FTIKeyword1": {
-                            "allOf": [
-                                {
-                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
-                                },
-                                {
-                                    "caKeyClassName": "FTIKeyword1",
-                                    "caKeyClassId": "999d2ead-87dc-4d13-8679-784a3aba0d70",
-                                    "caValueType": "text",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            ]
-                        },
-                        "FTIKeyword": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "FTIKeyword",
-                                    "caKeyClassId": "8442c504-4b46-4a61-b570-f7432329f178",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
                         "CaseNumber": {
                             "allOf": [
                                 {
@@ -63,26 +35,14 @@
                                 }
                             ]
                         },
-                        "ApplicationDate": {
+                        "FullName": {
                             "allOf": [
                                 {
                                     "$ref": "unmapped"
                                 },
                                 {
-                                    "caKeyClassName": "ApplicationDate",
-                                    "caKeyClassId": "7e5f050f-96a1-4aaa-8d1f-0033d96a53e5",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "OIUnit": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "OIUnit",
-                                    "caKeyClassId": "4157795c-4097-496d-bfed-94fa71d95fb1",
+                                    "caKeyClassName": "FullName",
+                                    "caKeyClassId": "fd45a797-1784-47e3-8296-50bd717b36d5",
                                     "caValueType": "text"
                                 }
                             ]
@@ -99,15 +59,55 @@
                                 }
                             ]
                         },
-                        "FullName": {
+                        "OIUnit": {
                             "allOf": [
                                 {
                                     "$ref": "unmapped"
                                 },
                                 {
-                                    "caKeyClassName": "FullName",
-                                    "caKeyClassId": "fd45a797-1784-47e3-8296-50bd717b36d5",
+                                    "caKeyClassName": "OIUnit",
+                                    "caKeyClassId": "4157795c-4097-496d-bfed-94fa71d95fb1",
                                     "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "ApplicationDate": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ApplicationDate",
+                                    "caKeyClassId": "7e5f050f-96a1-4aaa-8d1f-0033d96a53e5",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "FTIKeyword": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "8442c504-4b46-4a61-b570-f7432329f178",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "FTIKeyword1": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword1",
+                                    "caKeyClassId": "999d2ead-87dc-4d13-8679-784a3aba0d70",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             ]
                         }

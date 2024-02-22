@@ -23,6 +23,46 @@
                         "retentionPeriodUnits": ""
                     },
                     "properties": {
+                        "FTIKeyword": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "8c8a99c6-bd3a-4a80-9df7-7c6f4e9d858e",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        },
+                        "Unit": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Unit",
+                                    "caKeyClassId": "5f86b8ce-2a1b-4fd8-906b-003d81bce8e8",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "Signature": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "Signature",
+                                    "caKeyClassId": "56ac57e8-c7cd-4086-b84b-e4a8b8b19db4",
+                                    "caValueType": "signature"
+                                }
+                            ]
+                        },
                         "EMail": {
                             "allOf": [
                                 {
@@ -56,46 +96,6 @@
                                     "caKeyClassName": "FullName",
                                     "caKeyClassId": "d093e24e-3eef-4334-b5e4-879ca749fd49",
                                     "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "Signature": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "Signature",
-                                    "caKeyClassId": "56ac57e8-c7cd-4086-b84b-e4a8b8b19db4",
-                                    "caValueType": "signature"
-                                }
-                            ]
-                        },
-                        "Unit": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "Unit",
-                                    "caKeyClassId": "5f86b8ce-2a1b-4fd8-906b-003d81bce8e8",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "FTIKeyword": {
-                            "allOf": [
-                                {
-                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
-                                },
-                                {
-                                    "caKeyClassName": "FTIKeyword",
-                                    "caKeyClassId": "8c8a99c6-bd3a-4a80-9df7-7c6f4e9d858e",
-                                    "caValueType": "text",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
                                 }
                             ]
                         }

@@ -23,18 +23,6 @@
                         "retentionPeriodUnits": ""
                     },
                     "properties": {
-                        "FullName": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "FullName",
-                                    "caKeyClassId": "c7401ef8-2640-4ff5-af60-ac87f36e4204",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
                         "FTIKeyword": {
                             "allOf": [
                                 {
@@ -94,6 +82,18 @@
                                             "caKeyClassId": "5b92697f-a359-4c8c-8134-6da7b9de45a6"
                                         }
                                     }
+                                }
+                            ]
+                        },
+                        "FullName": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "FullName",
+                                    "caKeyClassId": "c7401ef8-2640-4ff5-af60-ac87f36e4204",
+                                    "caValueType": "text"
                                 }
                             ]
                         }

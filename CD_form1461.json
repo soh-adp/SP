@@ -23,18 +23,6 @@
                         "retentionPeriodUnits": ""
                     },
                     "properties": {
-                        "ClaimantsSignature": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "ClaimantsSignature",
-                                    "caKeyClassId": "3aed4a12-192f-46d6-86e6-52babf7aff46",
-                                    "caValueType": "signature"
-                                }
-                            ]
-                        },
                         "ForDepartmentUseOnly": {
                             "allOf": [
                                 {
@@ -57,6 +45,30 @@
                                 }
                             ]
                         },
+                        "ClaimantsSignature": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ClaimantsSignature",
+                                    "caKeyClassId": "3aed4a12-192f-46d6-86e6-52babf7aff46",
+                                    "caValueType": "signature"
+                                }
+                            ]
+                        },
+                        "ClientFullName": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "ClientFullName",
+                                    "caKeyClassId": "b745bc73-42e3-421f-b2b2-703d11e435f0",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
                         "FTIKeyword": {
                             "allOf": [
                                 {
@@ -70,18 +82,6 @@
                                         "string",
                                         "null"
                                     ]
-                                }
-                            ]
-                        },
-                        "ClientFullName": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "ClientFullName",
-                                    "caKeyClassId": "b745bc73-42e3-421f-b2b2-703d11e435f0",
-                                    "caValueType": "text"
                                 }
                             ]
                         }

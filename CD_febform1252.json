@@ -23,19 +23,15 @@
                         "retentionPeriodUnits": ""
                     },
                     "properties": {
-                        "FTIKeyword": {
+                        "CaseNumber": {
                             "allOf": [
                                 {
-                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                    "$ref": "unmapped"
                                 },
                                 {
-                                    "caKeyClassName": "FTIKeyword",
-                                    "caKeyClassId": "5ecfb84a-b4b6-40ed-a572-aa300a583641",
-                                    "caValueType": "text",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
+                                    "caKeyClassName": "CaseNumber",
+                                    "caKeyClassId": "d1d90b4f-a197-43f3-8841-0b7aa43bb066",
+                                    "caValueType": "text"
                                 }
                             ]
                         },
@@ -109,15 +105,19 @@
                                 }
                             ]
                         },
-                        "CaseNumber": {
+                        "FTIKeyword": {
                             "allOf": [
                                 {
-                                    "$ref": "unmapped"
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
                                 },
                                 {
-                                    "caKeyClassName": "CaseNumber",
-                                    "caKeyClassId": "d1d90b4f-a197-43f3-8841-0b7aa43bb066",
-                                    "caValueType": "text"
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "5ecfb84a-b4b6-40ed-a572-aa300a583641",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
                                 }
                             ]
                         },
