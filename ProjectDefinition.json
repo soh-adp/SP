@@ -82,5 +82,8 @@
   "ba_versionNotes": "ready for test",
   "ba_versionId": "234473b9-faf8-4e92-befa-6408a2d008e2",
   "ba_caClassificationModelTrainingId": "4207db65-3133-472c-aec8-68e7620a682a",
-  "ba_caDataExtractionModelTrainingId": "b2c6a222-a5cd-4307-a953-8abfe4eeb3ff"
+  "ba_caDataExtractionModelTrainingId": "b2c6a222-a5cd-4307-a953-8abfe4eeb3ff",
+  "ba_caDeployedClassificationModelTrainingId": "4207db65-3133-472c-aec8-68e7620a682a",
+  "ba_caDeployedDataExtractionModelTrainingId": "b2c6a222-a5cd-4307-a953-8abfe4eeb3ff",
+  "ba_deploy_repo_id": "DEVOS1"
 }
