@@ -1,107 +1,107 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1271.json",
-    "title": "SP Document Type Definitions",
-    "lastUpdatDate": "",
-    "lastUpdate": "",
-    "comment": "This is a Doc Type Definition showing some different property types",
-    "baForDeployment": true,
-    "definitions": {
-        "febform1271": {
-            "$id": "#febform1271",
-            "title": "[feb] form-1271",
-            "allOf": [
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1271.json",
+  "title": "SP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": true,
+  "definitions": {
+    "febform1271": {
+      "$id": "#febform1271",
+      "title": "[feb] form-1271",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "5ef6f4fc-79f1-43c0-aaf2-15957cca81f8",
+            "defaultRetentionPeriod": "Indefinite",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {
+            "CaseNumber": {
+              "allOf": [
                 {
-                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                  "$ref": "unmapped"
                 },
                 {
-                    "type": "object",
-                    "description": "",
-                    "baclass": {
-                        "caDocTypeId": "5ef6f4fc-79f1-43c0-aaf2-15957cca81f8",
-                        "defaultRetentionPeriod": "Indefinite",
-                        "retentionPeriodUnits": ""
-                    },
-                    "properties": {
-                        "CaseNumber": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "CaseNumber",
-                                    "caKeyClassId": "2338f5a7-6f5d-430b-9ee7-fea1fd534f3a",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "ClientID": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "ClientID",
-                                    "caKeyClassId": "a0124ca2-6f38-4ab6-8d67-57adb3cb9b07",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "ClientFullName": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "ClientFullName",
-                                    "caKeyClassId": "a6d170dc-43f9-4aeb-862e-aa7a8d9741ae",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "SignatureofPatientorGuardian": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "SignatureofPatientorGuardian",
-                                    "caKeyClassId": "5b63c2e8-7070-4f41-b963-0a59dc460dea",
-                                    "caValueType": "signature"
-                                }
-                            ]
-                        },
-                        "CategoryVisitType": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "CategoryVisitType",
-                                    "caKeyClassId": "bbdffa4e-340e-4f74-b3fe-88e6e08967f7",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "FTIKeyword": {
-                            "allOf": [
-                                {
-                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
-                                },
-                                {
-                                    "caKeyClassName": "FTIKeyword",
-                                    "caKeyClassId": "ccac6768-7fc1-483f-9e76-857935a11107",
-                                    "caValueType": "text",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            ]
-                        }
-                    }
+                  "caKeyClassName": "CaseNumber",
+                  "caKeyClassId": "2338f5a7-6f5d-430b-9ee7-fea1fd534f3a",
+                  "caValueType": "text"
                 }
-            ]
+              ]
+            },
+            "ClientID": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "ClientID",
+                  "caKeyClassId": "a0124ca2-6f38-4ab6-8d67-57adb3cb9b07",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "ClientFullName": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "ClientFullName",
+                  "caKeyClassId": "a6d170dc-43f9-4aeb-862e-aa7a8d9741ae",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "SignatureofPatientorGuardian": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "SignatureofPatientorGuardian",
+                  "caKeyClassId": "5b63c2e8-7070-4f41-b963-0a59dc460dea",
+                  "caValueType": "signature"
+                }
+              ]
+            },
+            "CategoryVisitType": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "CategoryVisitType",
+                  "caKeyClassId": "bbdffa4e-340e-4f74-b3fe-88e6e08967f7",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "FTIKeyword": {
+              "allOf": [
+                {
+                  "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                },
+                {
+                  "caKeyClassName": "FTIKeyword",
+                  "caKeyClassId": "ccac6768-7fc1-483f-9e76-857935a11107",
+                  "caValueType": "text",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              ]
+            }
+          }
         }
+      ]
     }
+  }
 }

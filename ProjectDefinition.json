@@ -15,19 +15,9 @@
   ],
   "ba_contentDefinitions": [
     {
-      "$ref": "CD_form1271nonFTI.json",
-      "title": "form-1271-nonFTI",
-      "caDocTypeId": "06650d6d-2e7f-42b2-aa35-7e05d2bb74be"
-    },
-    {
       "$ref": "CD_febform1240.json",
       "title": "[feb] form-1240",
       "caDocTypeId": "646496af-248a-433d-bf0a-7395e4cf3c4d"
-    },
-    {
-      "$ref": "CD_form1271FTI.json",
-      "title": "form-1271-FTI",
-      "caDocTypeId": "2814deef-f207-49d3-b4f6-6d97d30ddbdb"
     },
     {
       "$ref": "CD_febform1252.json",
@@ -73,16 +63,26 @@
       "$ref": "CD_febform1313A.json",
       "title": "[feb] form-1313A",
       "caDocTypeId": "06db814a-3a41-489a-8d0b-f7276f234892"
+    },
+    {
+      "$ref": "CD_DOC5.json",
+      "title": "DOC5",
+      "caDocTypeId": "70eb1156-d787-46de-916b-fa98644717e1"
+    },
+    {
+      "$ref": "CD_DOC7.json",
+      "title": "DOC7",
+      "caDocTypeId": "92efde86-6b1e-4352-8605-0ee7b1c8db01"
     }
   ],
   "ba_caDefinitions": "caDefinitions.json",
   "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
   "ba_caMLModel": "MLmodel.zip",
-  "ba_snapshotName": "v8-2024-02-26-1647",
-  "ba_versionNotes": "testing",
-  "ba_versionId": "07c58a4c-e8fd-45aa-a998-fc0ae1c9fb2d",
-  "ba_caClassificationModelTrainingId": "4207db65-3133-472c-aec8-68e7620a682a",
-  "ba_caDataExtractionModelTrainingId": "aef9233a-93cb-4e33-a912-9d3e5e42ace0",
+  "ba_snapshotName": "v9-2024-04-01-2242",
+  "ba_versionNotes": "merged doc types",
+  "ba_versionId": "ee980ab0-ab45-4f55-b840-d884dc29b310",
+  "ba_caClassificationModelTrainingId": "9af706c7-cd11-45e4-ac60-0787ee93b906",
+  "ba_caDataExtractionModelTrainingId": "a945407f-8cca-449a-8795-c452333c03bd",
   "ba_caDeployedClassificationModelTrainingId": "4207db65-3133-472c-aec8-68e7620a682a",
   "ba_caDeployedDataExtractionModelTrainingId": "aef9233a-93cb-4e33-a912-9d3e5e42ace0",
   "ba_deploy_repo_id": "DEVOS1"

@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "http://www.ibm.com/dba/projects/SP/CD_form1271FTI.json",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_DOC7.json",
   "title": "SP Document Type Definitions",
   "lastUpdatDate": "",
   "lastUpdate": "",
   "comment": "This is a Doc Type Definition showing some different property types",
   "baForDeployment": false,
   "definitions": {
-    "form1271FTI": {
-      "$id": "#form1271FTI",
-      "title": "form-1271-FTI",
+    "DOC7": {
+      "$id": "#DOC7",
+      "title": "DOC7",
       "allOf": [
         {
           "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
@@ -18,19 +18,19 @@
           "type": "object",
           "description": "",
           "baclass": {
-            "caDocTypeId": "2814deef-f207-49d3-b4f6-6d97d30ddbdb",
+            "caDocTypeId": "92efde86-6b1e-4352-8605-0ee7b1c8db01",
             "defaultRetentionPeriod": "Indefinite",
             "retentionPeriodUnits": ""
           },
           "properties": {
-            "test": {
+            "FTIKeyword": {
               "allOf": [
                 {
                   "$ref": "unmapped"
                 },
                 {
-                  "caKeyClassName": "test",
-                  "caKeyClassId": "bc3b30f3-7b69-47de-9adf-36a62ca484e5",
+                  "caKeyClassName": "FTIKeyword",
+                  "caKeyClassId": "1ed3d5cf-8681-49c4-bd6e-d10cce55682c",
                   "caValueType": "text"
                 }
               ]

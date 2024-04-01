@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "http://www.ibm.com/dba/projects/SP/CD_form1271nonFTI.json",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_DOC5.json",
   "title": "SP Document Type Definitions",
   "lastUpdatDate": "",
   "lastUpdate": "",
   "comment": "This is a Doc Type Definition showing some different property types",
   "baForDeployment": false,
   "definitions": {
-    "form1271nonFTI": {
-      "$id": "#form1271nonFTI",
-      "title": "form-1271-nonFTI",
+    "DOC5": {
+      "$id": "#DOC5",
+      "title": "DOC5",
       "allOf": [
         {
           "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
@@ -18,11 +18,24 @@
           "type": "object",
           "description": "",
           "baclass": {
-            "caDocTypeId": "06650d6d-2e7f-42b2-aa35-7e05d2bb74be",
+            "caDocTypeId": "70eb1156-d787-46de-916b-fa98644717e1",
             "defaultRetentionPeriod": "Indefinite",
             "retentionPeriodUnits": ""
           },
-          "properties": {}
+          "properties": {
+            "FTIKeyword": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "FTIKeyword",
+                  "caKeyClassId": "efdf6f09-91e8-40c6-ae59-fc90360de507",
+                  "caValueType": "text"
+                }
+              ]
+            }
+          }
         }
       ]
     }
