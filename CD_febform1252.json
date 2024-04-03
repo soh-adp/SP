@@ -1,141 +1,141 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1252.json",
-    "title": "SP Document Type Definitions",
-    "lastUpdatDate": "",
-    "lastUpdate": "",
-    "comment": "This is a Doc Type Definition showing some different property types",
-    "baForDeployment": true,
-    "definitions": {
-        "febform1252": {
-            "$id": "#febform1252",
-            "title": "[feb] form-1252",
-            "allOf": [
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_febform1252.json",
+  "title": "SP Document Type Definitions",
+  "lastUpdatDate": "",
+  "lastUpdate": "",
+  "comment": "This is a Doc Type Definition showing some different property types",
+  "baForDeployment": true,
+  "definitions": {
+    "febform1252": {
+      "$id": "#febform1252",
+      "title": "[feb] form-1252",
+      "allOf": [
+        {
+          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+        },
+        {
+          "type": "object",
+          "description": "",
+          "baclass": {
+            "caDocTypeId": "f3aa80ef-94df-429d-9c25-0d72c9be4a3a",
+            "defaultRetentionPeriod": "Indefinite",
+            "retentionPeriodUnits": ""
+          },
+          "properties": {
+            "CaseNumber": {
+              "allOf": [
                 {
-                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                  "$ref": "unmapped"
                 },
                 {
-                    "type": "object",
-                    "description": "",
-                    "baclass": {
-                        "caDocTypeId": "f3aa80ef-94df-429d-9c25-0d72c9be4a3a",
-                        "defaultRetentionPeriod": "Indefinite",
-                        "retentionPeriodUnits": ""
-                    },
-                    "properties": {
-                        "CaseNumber": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "CaseNumber",
-                                    "caKeyClassId": "d1d90b4f-a197-43f3-8841-0b7aa43bb066",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "TypeofProvider": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "TypeofProvider",
-                                    "caKeyClassId": "50799488-6d2f-4156-9340-40e68ba83e48",
-                                    "caValueType": "composite",
-                                    "caComplexKeyMapping": {
-                                        "Psychiatrist": {
-                                            "caKeyClassName": "Psychiatrist",
-                                            "caKeyClassId": "070a1fd2-699f-470e-b825-cba822beae72"
-                                        },
-                                        "Psychologist": {
-                                            "caKeyClassName": "Psychologist",
-                                            "caKeyClassId": "0e53f9c9-6143-4a24-8d53-92452a3bc3a1"
-                                        },
-                                        "Physician": {
-                                            "caKeyClassName": "Physician",
-                                            "caKeyClassId": "66b1abb2-202e-4b22-ace1-efa4650455ec"
-                                        },
-                                        "CertifiedSubstanceAbuseCounselor": {
-                                            "caKeyClassName": "CertifiedSubstanceAbuseCounselor",
-                                            "caKeyClassId": "1544b845-996e-4681-ac08-9ed4a9b02426"
-                                        },
-                                        "ClinicalSocialWorker": {
-                                            "caKeyClassName": "ClinicalSocialWorker",
-                                            "caKeyClassId": "764fc98c-6159-4ff3-ba6c-56f47a5afee7"
-                                        }
-                                    }
-                                }
-                            ]
-                        },
-                        "TreatmentProviderFullName": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "TreatmentProviderFullName",
-                                    "caKeyClassId": "c2ec1cdf-6ef6-440c-95d3-5377f4fff8d2",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        },
-                        "SignatureofTreatmentProvider": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "SignatureofTreatmentProvider",
-                                    "caKeyClassId": "90bb6777-ecc9-4402-89bf-cd2198cccf45",
-                                    "caValueType": "signature"
-                                }
-                            ]
-                        },
-                        "SignatureofPatientorGuardian": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "SignatureofPatientorGuardian",
-                                    "caKeyClassId": "eab87ecf-e6f4-494e-8505-1b8f7bbffbb2",
-                                    "caValueType": "signature"
-                                }
-                            ]
-                        },
-                        "FTIKeyword": {
-                            "allOf": [
-                                {
-                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
-                                },
-                                {
-                                    "caKeyClassName": "FTIKeyword",
-                                    "caKeyClassId": "5ecfb84a-b4b6-40ed-a572-aa300a583641",
-                                    "caValueType": "text",
-                                    "type": [
-                                        "string",
-                                        "null"
-                                    ]
-                                }
-                            ]
-                        },
-                        "FullName": {
-                            "allOf": [
-                                {
-                                    "$ref": "unmapped"
-                                },
-                                {
-                                    "caKeyClassName": "FullName",
-                                    "caKeyClassId": "649dd7d7-ce25-4ea0-ad7c-f0b76c11aace",
-                                    "caValueType": "text"
-                                }
-                            ]
-                        }
-                    }
+                  "caKeyClassName": "CaseNumber",
+                  "caKeyClassId": "d1d90b4f-a197-43f3-8841-0b7aa43bb066",
+                  "caValueType": "text"
                 }
-            ]
+              ]
+            },
+            "TypeofProvider": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "TypeofProvider",
+                  "caKeyClassId": "50799488-6d2f-4156-9340-40e68ba83e48",
+                  "caValueType": "composite",
+                  "caComplexKeyMapping": {
+                    "Psychiatrist": {
+                      "caKeyClassName": "Psychiatrist",
+                      "caKeyClassId": "070a1fd2-699f-470e-b825-cba822beae72"
+                    },
+                    "Psychologist": {
+                      "caKeyClassName": "Psychologist",
+                      "caKeyClassId": "0e53f9c9-6143-4a24-8d53-92452a3bc3a1"
+                    },
+                    "Physician": {
+                      "caKeyClassName": "Physician",
+                      "caKeyClassId": "66b1abb2-202e-4b22-ace1-efa4650455ec"
+                    },
+                    "CertifiedSubstanceAbuseCounselor": {
+                      "caKeyClassName": "CertifiedSubstanceAbuseCounselor",
+                      "caKeyClassId": "1544b845-996e-4681-ac08-9ed4a9b02426"
+                    },
+                    "ClinicalSocialWorker": {
+                      "caKeyClassName": "ClinicalSocialWorker",
+                      "caKeyClassId": "764fc98c-6159-4ff3-ba6c-56f47a5afee7"
+                    }
+                  }
+                }
+              ]
+            },
+            "TreatmentProviderFullName": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "TreatmentProviderFullName",
+                  "caKeyClassId": "c2ec1cdf-6ef6-440c-95d3-5377f4fff8d2",
+                  "caValueType": "text"
+                }
+              ]
+            },
+            "SignatureofTreatmentProvider": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "SignatureofTreatmentProvider",
+                  "caKeyClassId": "90bb6777-ecc9-4402-89bf-cd2198cccf45",
+                  "caValueType": "signature"
+                }
+              ]
+            },
+            "SignatureofPatientorGuardian": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "SignatureofPatientorGuardian",
+                  "caKeyClassId": "eab87ecf-e6f4-494e-8505-1b8f7bbffbb2",
+                  "caValueType": "signature"
+                }
+              ]
+            },
+            "FTIKeyword": {
+              "allOf": [
+                {
+                  "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                },
+                {
+                  "caKeyClassName": "FTIKeyword",
+                  "caKeyClassId": "5ecfb84a-b4b6-40ed-a572-aa300a583641",
+                  "caValueType": "text",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              ]
+            },
+            "FullName": {
+              "allOf": [
+                {
+                  "$ref": "unmapped"
+                },
+                {
+                  "caKeyClassName": "FullName",
+                  "caKeyClassId": "649dd7d7-ce25-4ea0-ad7c-f0b76c11aace",
+                  "caValueType": "text"
+                }
+              ]
+            }
+          }
         }
+      ]
     }
+  }
 }
