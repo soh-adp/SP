@@ -22,6 +22,11 @@
             "1" : "deployment_1_v8-2024-02-26-1647.json"
           }
         },
+        "v10-2024-04-03-0436" : {
+          "deployments" : {
+            "1" : "deployment_1_v10-2024-04-03-0436.json"
+          }
+        },
         "v3-2024-02-22-2259" : {
           "deployments" : {
             "1" : "deployment_1_v3-2024-02-22-2259.json"
@@ -41,5 +46,5 @@
       "snapshotHistory" : [ ]
     }
   },
-  "lastDeployment" : "deployment_1_v9-2024-04-01-2242.json"
+  "lastDeployment" : "deployment_1_v10-2024-04-03-0436.json"
 }
