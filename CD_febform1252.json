@@ -116,7 +116,7 @@
                   "caValueType": "text",
                   "type": [
                     "string",
-                    "null"
+                    null
                   ]
                 }
               ]
