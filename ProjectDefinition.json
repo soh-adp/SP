@@ -65,25 +65,25 @@
       "caDocTypeId": "06db814a-3a41-489a-8d0b-f7276f234892"
     },
     {
-      "$ref": "CD_DOC5.json",
-      "title": "DOC5",
-      "caDocTypeId": "70eb1156-d787-46de-916b-fa98644717e1"
+      "$ref": "CD_aprDOCR5.json",
+      "title": "[apr] DOCR5",
+      "caDocTypeId": "5a040975-d2d3-4489-a7e6-851a2f61c1ed"
     },
     {
-      "$ref": "CD_DOC7.json",
-      "title": "DOC7",
-      "caDocTypeId": "92efde86-6b1e-4352-8605-0ee7b1c8db01"
+      "$ref": "CD_aprDOCR7.json",
+      "title": "[apr] DOCR7",
+      "caDocTypeId": "cb1744ff-2aef-4258-9521-255aab17225a"
     }
   ],
   "ba_caDefinitions": "caDefinitions.json",
   "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
   "ba_caMLModel": "MLmodel.zip",
-  "ba_snapshotName": "v11-2024-04-04-1801",
-  "ba_versionNotes": "new training data",
-  "ba_versionId": "fd4a8a0c-08f3-4f4c-8049-df93a40d6f79",
-  "ba_caClassificationModelTrainingId": "6b4c0fee-b2e2-4a9d-a650-613ea633a985",
-  "ba_caDataExtractionModelTrainingId": "0adb583e-6ba9-429d-ae58-6e09e2541077",
-  "ba_caDeployedClassificationModelTrainingId": "c0f52709-a84a-4b04-ad2e-37fd1ce45d5a",
-  "ba_caDeployedDataExtractionModelTrainingId": "1ef9538b-05fa-4ddb-b1d9-b7ef0c33745a",
+  "ba_snapshotName": "v12-2024-04-09-2053",
+  "ba_versionNotes": "new docr5 and docr7 with fti keyword",
+  "ba_versionId": "21ee2dd0-471a-43ec-bbcc-a06ee44916f5",
+  "ba_caClassificationModelTrainingId": "46d8d966-c925-4aec-880d-775e011e7925",
+  "ba_caDataExtractionModelTrainingId": "14e1f061-09a4-46a4-8b29-b7557d223ef6",
+  "ba_caDeployedClassificationModelTrainingId": "6b4c0fee-b2e2-4a9d-a650-613ea633a985",
+  "ba_caDeployedDataExtractionModelTrainingId": "0adb583e-6ba9-429d-ae58-6e09e2541077",
   "ba_deploy_repo_id": "DEVOS1"
 }

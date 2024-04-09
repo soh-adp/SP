@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "http://www.ibm.com/dba/projects/SP/CD_DOC7.json",
+  "$id": "http://www.ibm.com/dba/projects/SP/CD_aprDOCR5.json",
   "title": "SP Document Type Definitions",
   "lastUpdatDate": "",
   "lastUpdate": "",
   "comment": "This is a Doc Type Definition showing some different property types",
   "baForDeployment": false,
   "definitions": {
-    "DOC7": {
-      "$id": "#DOC7",
-      "title": "DOC7",
+    "aprDOCR5": {
+      "$id": "#aprDOCR5",
+      "title": "[apr] DOCR5",
       "allOf": [
         {
           "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
@@ -18,7 +18,7 @@
           "type": "object",
           "description": "",
           "baclass": {
-            "caDocTypeId": "92efde86-6b1e-4352-8605-0ee7b1c8db01",
+            "caDocTypeId": "5a040975-d2d3-4489-a7e6-851a2f61c1ed",
             "defaultRetentionPeriod": "Indefinite",
             "retentionPeriodUnits": ""
           },
@@ -30,7 +30,7 @@
                 },
                 {
                   "caKeyClassName": "FTIKeyword",
-                  "caKeyClassId": "1ed3d5cf-8681-49c4-bd6e-d10cce55682c",
+                  "caKeyClassId": "0b039757-afed-4912-a67d-069408fbafa0",
                   "caValueType": "text"
                 }
               ]
