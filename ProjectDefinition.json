@@ -78,12 +78,10 @@
   "ba_caDefinitions": "caDefinitions.json",
   "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
   "ba_caMLModel": "MLmodel.zip",
-  "ba_snapshotName": "v13-2024-04-17-2113",
-  "ba_versionNotes": "lower class conf to 65",
-  "ba_versionId": "5aa3269b-fe60-49dc-a21a-a29f8742ff28",
-  "ba_caClassificationModelTrainingId": "46d8d966-c925-4aec-880d-775e011e7925",
-  "ba_caDataExtractionModelTrainingId": "14e1f061-09a4-46a4-8b29-b7557d223ef6",
-  "ba_caDeployedClassificationModelTrainingId": "46d8d966-c925-4aec-880d-775e011e7925",
-  "ba_caDeployedDataExtractionModelTrainingId": "14e1f061-09a4-46a4-8b29-b7557d223ef6",
-  "ba_deploy_repo_id": "DEVOS1"
+  "ba_snapshotName": "v14-2024-04-17-2310",
+  "ba_versionNotes": "update deployment keys",
+  "ba_versionId": "050c208c-84e4-4667-b630-50fef4d4e13f",
+  "ba_deploy_repo_id": "DEVOS1",
+  "ba_caClassificationModelTrainingId": "5ba43977-dccc-44f2-9bbe-041e26e0a224",
+  "ba_caDataExtractionModelTrainingId": "4e0db92c-3e3f-40c7-89f5-e073eb06be08"
 }

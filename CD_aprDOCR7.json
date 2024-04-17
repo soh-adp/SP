@@ -1,43 +1,47 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$id": "http://www.ibm.com/dba/projects/SP/CD_aprDOCR7.json",
-  "title": "SP Document Type Definitions",
-  "lastUpdatDate": "",
-  "lastUpdate": "",
-  "comment": "This is a Doc Type Definition showing some different property types",
-  "baForDeployment": false,
-  "definitions": {
-    "aprDOCR7": {
-      "$id": "#aprDOCR7",
-      "title": "[apr] DOCR7",
-      "allOf": [
-        {
-          "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
-        },
-        {
-          "type": "object",
-          "description": "",
-          "baclass": {
-            "caDocTypeId": "cb1744ff-2aef-4258-9521-255aab17225a",
-            "defaultRetentionPeriod": "Indefinite",
-            "retentionPeriodUnits": ""
-          },
-          "properties": {
-            "FTIKeyword": {
-              "allOf": [
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/SP/CD_aprDOCR7.json",
+    "title": "SP Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": true,
+    "definitions": {
+        "aprDOCR7": {
+            "$id": "#aprDOCR7",
+            "title": "[apr] DOCR7",
+            "allOf": [
                 {
-                  "$ref": "unmapped"
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
                 },
                 {
-                  "caKeyClassName": "FTIKeyword",
-                  "caKeyClassId": "a23cc153-f33f-49e9-9e91-4e683a5bce0e",
-                  "caValueType": "text"
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "cb1744ff-2aef-4258-9521-255aab17225a",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "FTIKeyword": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json#FTIKeyword"
+                                },
+                                {
+                                    "caKeyClassName": "FTIKeyword",
+                                    "caKeyClassId": "a23cc153-f33f-49e9-9e91-4e683a5bce0e",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
                 }
-              ]
-            }
-          }
+            ]
         }
-      ]
     }
-  }
 }
