@@ -3769,7 +3769,7 @@
       "HeadingList": [],
       "OptFlags": 3,
       "FixedForm": false,
-      "ClassificationConfidenceThreshold": 70,
+      "ClassificationConfidenceThreshold": 65,
       "IncludeFeedbackDocuments": false,
       "FeedbackDocumentsPercentage": 10
     },
@@ -3901,7 +3901,7 @@
       "HeadingList": [],
       "OptFlags": 3,
       "FixedForm": false,
-      "ClassificationConfidenceThreshold": 70,
+      "ClassificationConfidenceThreshold": 65,
       "IncludeFeedbackDocuments": false,
       "FeedbackDocumentsPercentage": 10
     }
@@ -3909,17 +3909,17 @@
   "OptFlags": 3,
   "OntologyType": "verbose",
   "UpdateTimestamp": {
-    "Ontology": "2024-04-09 20:12:56.368762",
+    "Ontology": "2024-04-17 21:11:47.964779",
     "TrainingData": [
-      {
-        "DocClassId": "cb1744ff-2aef-4258-9521-255aab17225a",
-        "ClassificationTrainingDataUpdateTS": "2024-04-09 20:35:26.549370",
-        "ExtractionTrainingDataUpdateTS": "2024-04-09 20:42:39.023060"
-      },
       {
         "DocClassId": "5a040975-d2d3-4489-a7e6-851a2f61c1ed",
         "ClassificationTrainingDataUpdateTS": "2024-04-09 20:13:18.858894",
         "ExtractionTrainingDataUpdateTS": "2024-04-09 20:25:52.693835"
+      },
+      {
+        "DocClassId": "cb1744ff-2aef-4258-9521-255aab17225a",
+        "ClassificationTrainingDataUpdateTS": "2024-04-09 20:35:26.549370",
+        "ExtractionTrainingDataUpdateTS": "2024-04-09 20:42:39.023060"
       },
       {
         "DocClassId": "646496af-248a-433d-bf0a-7395e4cf3c4d",

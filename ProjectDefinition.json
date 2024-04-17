@@ -78,12 +78,12 @@
   "ba_caDefinitions": "caDefinitions.json",
   "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
   "ba_caMLModel": "MLmodel.zip",
-  "ba_snapshotName": "v12-2024-04-09-2053",
-  "ba_versionNotes": "new docr5 and docr7 with fti keyword",
-  "ba_versionId": "21ee2dd0-471a-43ec-bbcc-a06ee44916f5",
+  "ba_snapshotName": "v13-2024-04-17-2113",
+  "ba_versionNotes": "lower class conf to 65",
+  "ba_versionId": "5aa3269b-fe60-49dc-a21a-a29f8742ff28",
   "ba_caClassificationModelTrainingId": "46d8d966-c925-4aec-880d-775e011e7925",
   "ba_caDataExtractionModelTrainingId": "14e1f061-09a4-46a4-8b29-b7557d223ef6",
-  "ba_caDeployedClassificationModelTrainingId": "6b4c0fee-b2e2-4a9d-a650-613ea633a985",
-  "ba_caDeployedDataExtractionModelTrainingId": "0adb583e-6ba9-429d-ae58-6e09e2541077",
+  "ba_caDeployedClassificationModelTrainingId": "46d8d966-c925-4aec-880d-775e011e7925",
+  "ba_caDeployedDataExtractionModelTrainingId": "14e1f061-09a4-46a4-8b29-b7557d223ef6",
   "ba_deploy_repo_id": "DEVOS1"
 }
