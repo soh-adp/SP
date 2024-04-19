@@ -1,87 +1,89 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$id": "http://www.ibm.com/dba/solutions/solution1/SP/ProjectDefinition.json",
-  "title": "sampleProject",
-  "ba_description": "",
-  "ba_type": "content",
-  "ba_repoPrimaryKey": "SP",
-  "ba_id": "fe693d52-982b-43fd-9ede-238ce889391b",
-  "ba_expectedDocTypes": 0,
-  "ba_dataDefinitions": [
-    {
-      "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json",
-      "title": "FTI Keyword"
-    }
-  ],
-  "ba_contentDefinitions": [
-    {
-      "$ref": "CD_febform1240.json",
-      "title": "[feb] form-1240",
-      "caDocTypeId": "646496af-248a-433d-bf0a-7395e4cf3c4d"
-    },
-    {
-      "$ref": "CD_febform1252.json",
-      "title": "[feb] form-1252",
-      "caDocTypeId": "f3aa80ef-94df-429d-9c25-0d72c9be4a3a"
-    },
-    {
-      "$ref": "CD_form1461.json",
-      "title": "[feb] form-1461",
-      "caDocTypeId": "cbb9e734-0c04-4a45-be8e-61af9740cb63"
-    },
-    {
-      "$ref": "CD_febform1244.json",
-      "title": "[feb] form-1244",
-      "caDocTypeId": "c198e71a-e425-4f0b-991d-8ca79f5910cc"
-    },
-    {
-      "$ref": "CD_febform806.json",
-      "title": "[feb] form-806",
-      "caDocTypeId": "a6bfccce-603c-440b-a8e4-207ed2781c16"
-    },
-    {
-      "$ref": "CD_febform1257.json",
-      "title": "[feb] form-1257",
-      "caDocTypeId": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8"
-    },
-    {
-      "$ref": "CD_febform1258.json",
-      "title": "[feb] form-1258",
-      "caDocTypeId": "a6f796ff-9e53-4bd6-a9af-2399615c8420"
-    },
-    {
-      "$ref": "CD_febform1271.json",
-      "title": "[feb] form-1271",
-      "caDocTypeId": "5ef6f4fc-79f1-43c0-aaf2-15957cca81f8"
-    },
-    {
-      "$ref": "CD_febform1276.json",
-      "title": "[feb] form-1276",
-      "caDocTypeId": "eefc48ca-7dc8-444b-a760-131f20212183"
-    },
-    {
-      "$ref": "CD_febform1313A.json",
-      "title": "[feb] form-1313A",
-      "caDocTypeId": "06db814a-3a41-489a-8d0b-f7276f234892"
-    },
-    {
-      "$ref": "CD_aprDOCR5.json",
-      "title": "[apr] DOCR5",
-      "caDocTypeId": "5a040975-d2d3-4489-a7e6-851a2f61c1ed"
-    },
-    {
-      "$ref": "CD_aprDOCR7.json",
-      "title": "[apr] DOCR7",
-      "caDocTypeId": "cb1744ff-2aef-4258-9521-255aab17225a"
-    }
-  ],
-  "ba_caDefinitions": "caDefinitions.json",
-  "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
-  "ba_caMLModel": "MLmodel.zip",
-  "ba_snapshotName": "v14-2024-04-17-2310",
-  "ba_versionNotes": "update deployment keys",
-  "ba_versionId": "050c208c-84e4-4667-b630-50fef4d4e13f",
-  "ba_deploy_repo_id": "DEVOS1",
-  "ba_caClassificationModelTrainingId": "5ba43977-dccc-44f2-9bbe-041e26e0a224",
-  "ba_caDataExtractionModelTrainingId": "4e0db92c-3e3f-40c7-89f5-e073eb06be08"
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/solutions/solution1/SP/ProjectDefinition.json",
+    "title": "sampleProject",
+    "ba_description": "",
+    "ba_type": "content",
+    "ba_repoPrimaryKey": "SP",
+    "ba_id": "fe693d52-982b-43fd-9ede-238ce889391b",
+    "ba_expectedDocTypes": 0,
+    "ba_dataDefinitions": [
+        {
+            "$ref": "proj://CDD/DD_f29daa7f-ce10-4d8f-bd62-f639f0996b3a_FTIKeyword.json",
+            "title": "FTI Keyword"
+        },
+        {
+            "$ref": "proj://CDD/DD_5ba4a9e9-0541-492d-9559-1b0869b58e42_FormTypeReport.json",
+            "title": "Form Type - Report"
+        }
+    ],
+    "ba_contentDefinitions": [
+        {
+            "$ref": "CD_febform1240.json",
+            "title": "[feb] form-1240",
+            "caDocTypeId": "646496af-248a-433d-bf0a-7395e4cf3c4d"
+        },
+        {
+            "$ref": "CD_febform1252.json",
+            "title": "[feb] form-1252",
+            "caDocTypeId": "f3aa80ef-94df-429d-9c25-0d72c9be4a3a"
+        },
+        {
+            "$ref": "CD_form1461.json",
+            "title": "[feb] form-1461",
+            "caDocTypeId": "cbb9e734-0c04-4a45-be8e-61af9740cb63"
+        },
+        {
+            "$ref": "CD_febform1244.json",
+            "title": "[feb] form-1244",
+            "caDocTypeId": "c198e71a-e425-4f0b-991d-8ca79f5910cc"
+        },
+        {
+            "$ref": "CD_febform806.json",
+            "title": "[feb] form-806",
+            "caDocTypeId": "a6bfccce-603c-440b-a8e4-207ed2781c16"
+        },
+        {
+            "$ref": "CD_febform1257.json",
+            "title": "[feb] form-1257",
+            "caDocTypeId": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8"
+        },
+        {
+            "$ref": "CD_febform1258.json",
+            "title": "[feb] form-1258",
+            "caDocTypeId": "a6f796ff-9e53-4bd6-a9af-2399615c8420"
+        },
+        {
+            "$ref": "CD_febform1271.json",
+            "title": "[feb] form-1271",
+            "caDocTypeId": "5ef6f4fc-79f1-43c0-aaf2-15957cca81f8"
+        },
+        {
+            "$ref": "CD_febform1276.json",
+            "title": "[feb] form-1276",
+            "caDocTypeId": "eefc48ca-7dc8-444b-a760-131f20212183"
+        },
+        {
+            "$ref": "CD_febform1313A.json",
+            "title": "[feb] form-1313A",
+            "caDocTypeId": "06db814a-3a41-489a-8d0b-f7276f234892"
+        },
+        {
+            "$ref": "CD_aprDOCR5.json",
+            "title": "[apr] DOCR5",
+            "caDocTypeId": "5a040975-d2d3-4489-a7e6-851a2f61c1ed"
+        },
+        {
+            "$ref": "CD_aprDOCR7.json",
+            "title": "[apr] DOCR7",
+            "caDocTypeId": "cb1744ff-2aef-4258-9521-255aab17225a"
+        }
+    ],
+    "ba_caDefinitions": "caDefinitions.json",
+    "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
+    "ba_caMLModel": "MLmodel.zip",
+    "ba_snapshotName": "v14-2024-04-17-2310",
+    "ba_versionNotes": "update deployment keys",
+    "ba_versionId": "050c208c-84e4-4667-b630-50fef4d4e13f",
+    "ba_deploy_repo_id": "DEVOS1"
 }

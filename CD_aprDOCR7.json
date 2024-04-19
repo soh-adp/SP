@@ -38,6 +38,22 @@
                                     ]
                                 }
                             ]
+                        },
+                        "FormTypeReport": {
+                            "allOf": [
+                                {
+                                    "$ref": "proj://CDD/DD_5ba4a9e9-0541-492d-9559-1b0869b58e42_FormTypeReport.json#FormTypeReport"
+                                },
+                                {
+                                    "caKeyClassName": "FormTypeReport",
+                                    "caKeyClassId": "c0b7f7a2-7f0b-4f00-bc36-98ddf51edbb0",
+                                    "caValueType": "text",
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            ]
                         }
                     }
                 }
