@@ -9,16 +9,12 @@
       "LocalizationNames": null,
       "CWordList": [
         {
-          "CWordID": "8ec15d9a-4995-4322-9041-a8ceedf321f8",
-          "CWordName": "RT/DT/IOP"
+          "CWordID": "36a3efb9-4b06-4a93-a5ff-8203315576c7",
+          "CWordName": "DIAGNOSTIC"
         },
         {
-          "CWordID": "115adfc8-9bbe-4733-88ec-29ed36457537",
-          "CWordName": "PSYCHIATRIC"
-        },
-        {
-          "CWordID": "0329c796-b8c5-46f6-a80b-fe2c74617f4c",
-          "CWordName": "1271"
+          "CWordID": "6d1a873a-1c5c-490b-ad62-73b80acee3cd",
+          "CWordName": "EPISODES"
         },
         {
           "CWordID": "2e275637-714d-48bf-8e23-ac1bc7a5f880",
@@ -33,20 +29,97 @@
           "CWordName": "EMPLOYABILITY"
         },
         {
-          "CWordID": "36a3efb9-4b06-4a93-a5ff-8203315576c7",
-          "CWordName": "DIAGNOSTIC"
-        },
-        {
           "CWordID": "1faa6a6f-163e-4f58-a30d-0c021f31611e",
           "CWordName": "DISORDERS"
         },
         {
-          "CWordID": "6d1a873a-1c5c-490b-ad62-73b80acee3cd",
-          "CWordName": "EPISODES"
+          "CWordID": "115adfc8-9bbe-4733-88ec-29ed36457537",
+          "CWordName": "PSYCHIATRIC"
+        },
+        {
+          "CWordID": "0329c796-b8c5-46f6-a80b-fe2c74617f4c",
+          "CWordName": "1271"
+        },
+        {
+          "CWordID": "8ec15d9a-4995-4322-9041-a8ceedf321f8",
+          "CWordName": "RT/DT/IOP"
         }
       ],
       "DocAliasList": [],
       "KeyClassList": [
+        {
+          "KeyClassID": "a0124ca2-6f38-4ab6-8d67-57adb3cb9b07",
+          "KeyClassName": "ClientID",
+          "Datatype": "sys.Numeric",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Client ID",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasName": "Client ID",
+                "Language": "en"
+              },
+              {
+                "KeyAliasName": "Client's",
+                "Language": "en"
+              },
+              {
+                "KeyAliasName": "C lient ID",
+                "Language": "en"
+              },
+              {
+                "KeyAliasName": "Client [D Number",
+                "Language": "en"
+              },
+              {
+                "KeyAliasName": "CLIENT",
+                "Language": "en"
+              }
+            ]
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "e44e3001-85b8-400e-81e0-6498fd9ec559",
+              "implRef": "sys.Numeric.LowConfidenceValidator"
+            },
+            {
+              "implId": "fea04bcf-1d40-49b0-8533-d5c155232d28",
+              "implRef": "sys.Numeric.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "668a028d-ba0b-480d-a249-cb4f433e4d4d",
+              "implRef": "sys.Numeric.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.Numeric.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.Numeric.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.Numeric.RequiredValueValidator"
+              }
+            ]
+          }
+        },
         {
           "KeyClassID": "ccac6768-7fc1-483f-9e76-857935a11107",
           "KeyClassName": "FTIKeyword",
@@ -438,41 +511,66 @@
               }
             ]
           }
+        }
+      ],
+      "HeadingList": [],
+      "OptFlags": 3,
+      "FixedForm": false,
+      "ClassificationConfidenceThreshold": 60,
+      "IncludeFeedbackDocuments": false,
+      "FeedbackDocumentsPercentage": 10
+    },
+    {
+      "DocClass": "febform806",
+      "DocClassID": "a6bfccce-603c-440b-a8e4-207ed2781c16",
+      "Comment": "",
+      "DisplayName": "[feb] form-806",
+      "LocalizationNames": null,
+      "CWordList": [
+        {
+          "CWordID": "b3f53760-2f60-43da-8f31-0df8286f5731",
+          "CWordName": "Hrs/Week"
         },
         {
-          "KeyClassID": "a0124ca2-6f38-4ab6-8d67-57adb3cb9b07",
-          "KeyClassName": "ClientID",
-          "Datatype": "sys.Numeric",
+          "CWordID": "4c930ace-3b5b-4422-a6de-df8c9c0691dd",
+          "CWordName": "17-794.1"
+        },
+        {
+          "CWordID": "78904b6e-c2ae-40d2-895d-f7f83caf847d",
+          "CWordName": "first-to-work"
+        },
+        {
+          "CWordID": "a1db19ac-fc32-48c2-bbbf-be2a8b2e1614",
+          "CWordName": "806"
+        }
+      ],
+      "DocAliasList": [],
+      "KeyClassList": [
+        {
+          "KeyClassID": "d093e24e-3eef-4334-b5e4-879ca749fd49",
+          "KeyClassName": "FullName",
+          "Datatype": "sys.FullName",
           "Mandatory": 0,
           "Sensitive": false,
           "CreationDate": "2024-02-22 23:03:09.086401",
           "cardinality": "single",
           "Comment": "",
-          "DisplayName": "Client ID",
+          "DisplayName": "Full Name",
           "LocalizationNames": null,
           "keyContext": {
             "KeyAliasList": [
               {
-                "KeyAliasName": "Client ID",
+                "KeyAliasID": "35089e29-57aa-4b03-a0a5-6f460b68c0ab",
+                "KeyAliasName": "Participant Name:",
                 "Language": "en"
               },
               {
-                "KeyAliasName": "Client's",
-                "Language": "en"
-              },
-              {
-                "KeyAliasName": "C lient ID",
-                "Language": "en"
-              },
-              {
-                "KeyAliasName": "Client [D Number",
-                "Language": "en"
-              },
-              {
-                "KeyAliasName": "CLIENT",
+                "KeyAliasID": "e80a068e-9489-4d92-96f5-d8bc88b1d35c",
+                "KeyAliasName": "Full Name",
                 "Language": "en"
               }
-            ]
+            ],
+            "PatternList": []
           },
           "valueFormats": {
             "text": {
@@ -486,14 +584,282 @@
           },
           "validatorList": [
             {
+              "failureReason": "Value is of a wrong type",
+              "severity": "Error",
+              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
+              "implRef": "sys.FullName.DatatypeMismatchValidator"
+            },
+            {
+              "failureReason": "Value confidence lower than the specified threshold",
+              "severity": "Warning",
+              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
+              "implRef": "sys.FullName.LowConfidenceValidator"
+            },
+            {
+              "failureReason": "Required value is missing",
+              "severity": "Error",
+              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
+              "implRef": "sys.FullName.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.FullName.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.FullName.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.FullName.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "5f86b8ce-2a1b-4fd8-906b-003d81bce8e8",
+          "KeyClassName": "Unit",
+          "Datatype": "sys.String",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Unit",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "4359611b-03ff-4a6d-bce1-cfa5cccada28",
+                "KeyAliasName": "Unit Name and Address:",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "2243149c-e5c6-489d-ad35-916cce64dc84",
+                "KeyAliasName": "Unit",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "5b3d19f0-16ee-4ebf-82a8-7887454649ab",
+              "implRef": "sys.String.LowConfidenceValidator"
+            },
+            {
+              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
+              "implRef": "sys.String.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
+              "implRef": "sys.String.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.String.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.String.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.String.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "56ac57e8-c7cd-4086-b84b-e4a8b8b19db4",
+          "KeyClassName": "Signature",
+          "Datatype": "sys.Boolean",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Signature",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "298de7e1-7a2c-4abc-8e1e-567de560c5a5",
+                "KeyAliasName": "Signature of Participant",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "e7772b4a-d8bb-4408-8752-618f13ccb230",
+                "KeyAliasName": "Signature",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "signature": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
+              "implRef": "sys.Boolean.LowConfidenceValidator"
+            },
+            {
+              "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
+              "implRef": "sys.Boolean.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
+              "implRef": "sys.Boolean.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.Boolean.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.Boolean.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.Boolean.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "0bcf9b4c-a1f7-45fe-a8c8-40ecb3d3024e",
+          "KeyClassName": "EMail",
+          "Datatype": "sys.EmailAddress",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "E-Mail",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "aa30a706-b8ff-45e1-9f40-d3bf34318a44",
+                "KeyAliasName": "E-Mail:",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "c1ee1b13-9ddf-4ed2-b077-1c64c1908b21",
+                "KeyAliasName": "E-Mail",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "a2f6f23a-1bc4-402b-b058-f35ef56adf6e",
+              "implRef": "sys.EmailAddress.LowConfidenceValidator"
+            },
+            {
+              "implId": "560c69d7-1d57-4f84-a5fb-d22ea4ee11ad",
+              "implRef": "sys.EmailAddress.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "061b848f-88cf-47eb-88f1-a486622952dc",
+              "implRef": "sys.EmailAddress.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.EmailAddress.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.EmailAddress.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.EmailAddress.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "64e90561-903a-494f-86ca-ce687749c801",
+          "KeyClassName": "ClientID",
+          "Datatype": "sys.Numeric",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Client ID",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "4dcb7a0e-c717-4841-93d3-7d62cf1edb71",
+                "KeyAliasName": "Client ID",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "fc3963d7-a880-4d61-a773-0838414c381d",
+                "KeyAliasName": "Client ID:",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "failureReason": "Value confidence lower than the specified threshold",
+              "severity": "Warning",
               "implId": "e44e3001-85b8-400e-81e0-6498fd9ec559",
               "implRef": "sys.Numeric.LowConfidenceValidator"
             },
             {
+              "failureReason": "Value is not Numeric",
+              "severity": "Error",
               "implId": "fea04bcf-1d40-49b0-8533-d5c155232d28",
               "implRef": "sys.Numeric.DatatypeMismatchValidator"
             },
             {
+              "failureReason": "Required value is missing",
+              "severity": "Error",
               "implId": "668a028d-ba0b-480d-a249-cb4f433e4d4d",
               "implRef": "sys.Numeric.RequiredValueValidator"
             }
@@ -511,51 +877,9 @@
               }
             ]
           }
-        }
-      ],
-      "HeadingList": [],
-      "OptFlags": 3,
-      "FixedForm": false,
-      "ClassificationConfidenceThreshold": 60,
-      "IncludeFeedbackDocuments": false,
-      "FeedbackDocumentsPercentage": 10
-    },
-    {
-      "DocClass": "febform1276",
-      "DocClassID": "eefc48ca-7dc8-444b-a760-131f20212183",
-      "Comment": "",
-      "DisplayName": "[feb] form-1276",
-      "LocalizationNames": null,
-      "CWordList": [
-        {
-          "CWordID": "7558f991-6056-4491-8377-d9251593573a",
-          "CWordName": "General"
         },
         {
-          "CWordID": "f12a72d5-5603-4201-bcdf-c201a10341e5",
-          "CWordName": "1276"
-        },
-        {
-          "CWordID": "a89c70ed-f33e-416e-8ade-cd5c982ce52c",
-          "CWordName": "17-659-29"
-        },
-        {
-          "CWordID": "8f420543-f963-41d6-a416-8833fb2e6614",
-          "CWordName": "(H.A.R.)"
-        },
-        {
-          "CWordID": "ef3a7120-4b49-4549-ba23-8b5a593504e0",
-          "CWordName": "Treatment"
-        },
-        {
-          "CWordID": "22dc0e31-9b6c-49ba-8858-d536282d4cd7",
-          "CWordName": "Compliance"
-        }
-      ],
-      "DocAliasList": [],
-      "KeyClassList": [
-        {
-          "KeyClassID": "70203e30-ee9e-48e3-aa86-a2056cfc8b51",
+          "KeyClassID": "8c8a99c6-bd3a-4a80-9df7-7c6f4e9d858e",
           "KeyClassName": "FTIKeyword",
           "Datatype": "sys.String",
           "Mandatory": 0,
@@ -568,7 +892,7 @@
           "keyContext": {
             "KeyAliasList": [
               {
-                "KeyAliasID": "00114555-637b-4c24-b292-1a436ff0bd81",
+                "KeyAliasID": "d5334c43-6ede-433d-b337-1027231a8e8c",
                 "KeyAliasName": "FTI Keyword",
                 "Language": "en"
               }
@@ -580,42 +904,42 @@
               "extractorList": [
                 {
                   "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707339273520",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
-                  "implId": "4b901167-3ea5-4a9f-bbd1-542fcf29a60c",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707339277937",
+                  "symbolicName": "NewExtractor_1707338361684",
                   "description": "",
                   "namespace": "valueExtractor",
                   "extractionTool": "regex",
                   "pattern": "(?i)(KHPE[358]|KHPD7|BEER|Per IRS)",
-                  "implId": "d69b4d4c-b67e-4d1b-bf2b-97b86b4f19fa",
+                  "implId": "fe5645c5-ab98-4ef0-9403-43333096417c",
                   "inline": true,
                   "isValueWithOptionalKeyAlias": true
                 },
                 {
                   "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707339281892",
+                  "symbolicName": "NewExtractor_1707338374121",
                   "description": "",
                   "namespace": "valueExtractor",
                   "extractionTool": "regex",
                   "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per)",
-                  "implId": "9266b130-5155-4368-a04e-7a668b696bc0",
+                  "implId": "629fae0c-32df-40fd-8e50-5e9fcf519bc9",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                },
+                {
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338383716",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
+                  "implId": "7a629d16-8a35-46b7-b896-5d518927bd92",
                   "inline": true,
                   "isValueWithOptionalKeyAlias": true
                 }
               ],
               "extractorSequence": [
-                "NewExtractor_1707339273520",
-                "NewExtractor_1707339277937",
-                "NewExtractor_1707339281892"
+                "NewExtractor_1707338361684",
+                "NewExtractor_1707338374121",
+                "NewExtractor_1707338383716"
               ],
               "converterList": [],
               "converterSequence": [],
@@ -666,30 +990,541 @@
       "FeedbackDocumentsPercentage": 10
     },
     {
-      "DocClass": "febform1313A",
-      "DocClassID": "06db814a-3a41-489a-8d0b-f7276f234892",
+      "DocClass": "febform1257",
+      "DocClassID": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8",
       "Comment": "",
-      "DisplayName": "[feb] form-1313A",
+      "DisplayName": "[feb] form-1257",
       "LocalizationNames": null,
-      "CWordList": [],
+      "CWordList": [
+        {
+          "CWordID": "9f01df35-6e74-479b-9dbb-3170b91e5ecb",
+          "CWordName": "EW"
+        },
+        {
+          "CWordID": "5a0c0966-27a8-4352-968f-a972ff7c3419",
+          "CWordName": "FTW"
+        },
+        {
+          "CWordID": "2e7069a4-0510-463c-87ea-bb61fc4521b2",
+          "CWordName": "VR"
+        },
+        {
+          "CWordID": "b17e9366-e900-41da-a409-45c35ecd286f",
+          "CWordName": "CCCH"
+        },
+        {
+          "CWordID": "65ac880d-01df-4744-ae0a-cd4709368f12",
+          "CWordName": "1257"
+        },
+        {
+          "CWordID": "3eec3c72-0c40-4e0b-82ef-12db4605da51",
+          "CWordName": "TANF"
+        }
+      ],
       "DocAliasList": [],
-      "KeyClassList": [],
-      "HeadingList": [],
-      "OptFlags": 3,
-      "FixedForm": false,
-      "ClassificationConfidenceThreshold": 70,
-      "IncludeFeedbackDocuments": false,
-      "FeedbackDocumentsPercentage": 10
-    },
-    {
-      "DocClass": "febform1240",
-      "DocClassID": "646496af-248a-433d-bf0a-7395e4cf3c4d",
-      "Comment": "",
-      "DisplayName": "[feb] form-1240",
-      "LocalizationNames": null,
-      "CWordList": [],
-      "DocAliasList": [],
-      "KeyClassList": [],
+      "KeyClassList": [
+        {
+          "KeyClassID": "c7401ef8-2640-4ff5-af60-ac87f36e4204",
+          "KeyClassName": "FullName",
+          "Datatype": "sys.FullName",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Full Name",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "31bae64d-9e81-4f94-b42b-3e7797fc2751",
+                "KeyAliasName": "Client name:",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "d6e8acd1-2357-490f-8856-8082e3465d21",
+                "KeyAliasName": "Full Name",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "ebd9c670-b38b-4f91-be12-18329682b6f6",
+                "KeyAliasName": "Clentname",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "failureReason": "Value is of a wrong type",
+              "severity": "Error",
+              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
+              "implRef": "sys.FullName.DatatypeMismatchValidator"
+            },
+            {
+              "failureReason": "Value confidence lower than the specified threshold",
+              "severity": "Warning",
+              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
+              "implRef": "sys.FullName.LowConfidenceValidator"
+            },
+            {
+              "failureReason": "Required value is missing",
+              "severity": "Error",
+              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
+              "implRef": "sys.FullName.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.FullName.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.FullName.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.FullName.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "707f04e7-8090-4e3f-bf08-396da6f93796",
+          "KeyClassName": "FTIKeyword",
+          "Datatype": "sys.String",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "FTI Keyword",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "0e199742-959b-4357-9600-f1750621b669",
+                "KeyAliasName": "FTI Keyword",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [
+                {
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338925827",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(KHPE[358]|KHPD7|BEER|Per IRS)",
+                  "implId": "38a1e252-4974-41cc-94e6-a399dc65e28a",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                },
+                {
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338930462",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per)",
+                  "implId": "81f89ff3-bbed-4d88-b258-1125808d5875",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                },
+                {
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338934632",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
+                  "implId": "2d9b2abb-e915-46a0-b7a0-4ecf3de49366",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                }
+              ],
+              "extractorSequence": [
+                "NewExtractor_1707338925827",
+                "NewExtractor_1707338930462",
+                "NewExtractor_1707338934632"
+              ],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "failureReason": "Value is not a string",
+              "severity": "Error",
+              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
+              "implRef": "sys.String.DatatypeMismatchValidator"
+            },
+            {
+              "failureReason": "Value confidence lower than the specified threshold",
+              "severity": "Warning",
+              "implId": "5b3d19f0-16ee-4ebf-82a8-7887454649ab",
+              "implRef": "sys.String.LowConfidenceValidator"
+            },
+            {
+              "failureReason": "Required value is missing",
+              "severity": "Error",
+              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
+              "implRef": "sys.String.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.String.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.String.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.String.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "baece483-df6d-4b8d-aaef-cbf77d0090c7",
+          "KeyClassName": "Unit",
+          "Datatype": "sys.StreetName",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Unit",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "b2af3ce9-3814-4450-b79e-811386c2cbc6",
+                "KeyAliasName": "Unit:",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "faa7ef52-e426-4d9e-a862-8a6cde18b12f",
+                "KeyAliasName": "Unit",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "457dedc1-eb7c-4500-8243-ea3148c08f11",
+              "implRef": "sys.StreetName.LowConfidenceValidator"
+            },
+            {
+              "implId": "84fe4c54-44df-4bf1-a939-04946c3ed55f",
+              "implRef": "sys.StreetName.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "e3d2afeb-27ef-4a5d-ab02-35ca6340faec",
+              "implRef": "sys.StreetName.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.StreetName.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.StreetName.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.StreetName.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "0bccfb66-5d9e-48eb-87c9-3eb282b5841e",
+          "KeyClassName": "CaseNumber",
+          "Datatype": "sys.Numeric",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Case Number",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "72e3dd3a-8a29-49a3-87a0-d9e6f2e694b9",
+                "KeyAliasName": "Case number:",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "ce424d4b-0cf4-4fc0-bde2-9fabc40e8d88",
+                "KeyAliasName": "Case Number",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "8fffda3a-4268-4aea-bb32-eabfca1b0ef0",
+                "KeyAliasName": "Case num ber",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "e44e3001-85b8-400e-81e0-6498fd9ec559",
+              "implRef": "sys.Numeric.LowConfidenceValidator"
+            },
+            {
+              "implId": "fea04bcf-1d40-49b0-8533-d5c155232d28",
+              "implRef": "sys.Numeric.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "668a028d-ba0b-480d-a249-cb4f433e4d4d",
+              "implRef": "sys.Numeric.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.Numeric.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.Numeric.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.Numeric.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
+          "KeyClassID": "fa3af9d9-8fd8-4afb-8ad9-525298c8c48d",
+          "KeyClassName": "ParticipationStatus",
+          "Datatype": "SHDHSFT.ParticipationStatus",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Participation Status",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "8f4acdd7-0063-47af-b069-bb9ca9f4df43",
+                "KeyAliasName": "Participation Status:",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "b717e73b-ee36-41ef-8910-d8f66da783df",
+                "KeyAliasName": "Participation Status",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "4c48bf12-7816-4e9d-be0f-3be2f408cb5c",
+              "implRef": "SHDHSFT.ParticipationStatus.LowConfidenceValidator"
+            },
+            {
+              "implId": "ce86fb17-a339-4241-806c-f25120b7e6c1",
+              "implRef": "SHDHSFT.ParticipationStatus.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "24c7ddec-ccdd-426f-91db-0f7e745dfb25",
+              "implRef": "SHDHSFT.ParticipationStatus.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "SHDHSFT.ParticipationStatus.LowConfidenceValidator"
+              },
+              {
+                "implRef": "SHDHSFT.ParticipationStatus.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "SHDHSFT.ParticipationStatus.RequiredValueValidator"
+              }
+            ]
+          },
+          "attributeList": [
+            {
+              "DataFixup": true,
+              "ValueRegion": "text",
+              "attrContext": {
+                "AttrAliasList": [
+                  {
+                    "AttrAliasName": "Did not meet compliance period, deny TANF",
+                    "Language": "en"
+                  },
+                  {
+                    "AttrAliasName": "D id notm eet.com ptance perod, deny TANF.",
+                    "Language": "en"
+                  }
+                ],
+                "PatternList": []
+              },
+              "attrId": "44e4171d-f2e9-41a1-b112-52e1318e8952",
+              "attrName": "DidnotmeetcomplianceperioddenyTANF",
+              "attrRef": "SHDHSFT.ParticipationStatus.DidnotmeetcomplianceperioddenyTANF",
+              "cardinality": "single",
+              "comment": "",
+              "creationDate": "2024-02-22 23:03:09.086401",
+              "displayName": "Did not meet compliance period, deny TANF",
+              "localizationNames": null,
+              "mandatory": 0,
+              "sensitive": false,
+              "validatorList": [
+                {
+                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
+                  "implRef": "sys.Boolean.LowConfidenceValidator"
+                },
+                {
+                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
+                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                },
+                {
+                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
+                  "implRef": "sys.Boolean.RequiredValueValidator"
+                }
+              ],
+              "validatorLogic": {
+                "AND": [
+                  {
+                    "implRef": "sys.Boolean.LowConfidenceValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.RequiredValueValidator"
+                  }
+                ]
+              },
+              "valueFormats": {
+                "checkbox": {
+                  "extractorList": [],
+                  "extractorSequence": [],
+                  "converterList": [],
+                  "converterSequence": [],
+                  "formatterList": [],
+                  "formatterSequence": []
+                }
+              }
+            },
+            {
+              "DataFixup": true,
+              "ValueRegion": "text",
+              "attrContext": {
+                "AttrAliasList": [
+                  {
+                    "AttrAliasName": "Met compliance period, approve TANF",
+                    "Language": "en"
+                  }
+                ],
+                "PatternList": []
+              },
+              "attrId": "5b92697f-a359-4c8c-8134-6da7b9de45a6",
+              "attrName": "MetcomplianceperiodapproveTANF",
+              "attrRef": "SHDHSFT.ParticipationStatus.MetcomplianceperiodapproveTANF",
+              "cardinality": "single",
+              "comment": "",
+              "creationDate": "2024-02-22 23:03:09.086401",
+              "displayName": "Met compliance period, approve TANF",
+              "localizationNames": null,
+              "mandatory": 0,
+              "sensitive": false,
+              "validatorList": [
+                {
+                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
+                  "implRef": "sys.Boolean.LowConfidenceValidator"
+                },
+                {
+                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
+                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                },
+                {
+                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
+                  "implRef": "sys.Boolean.RequiredValueValidator"
+                }
+              ],
+              "validatorLogic": {
+                "AND": [
+                  {
+                    "implRef": "sys.Boolean.LowConfidenceValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                  },
+                  {
+                    "implRef": "sys.Boolean.RequiredValueValidator"
+                  }
+                ]
+              },
+              "valueFormats": {
+                "checkbox": {
+                  "extractorList": [],
+                  "extractorSequence": [],
+                  "converterList": [],
+                  "converterSequence": [],
+                  "formatterList": [],
+                  "formatterSequence": []
+                }
+              }
+            }
+          ]
+        }
+      ],
       "HeadingList": [],
       "OptFlags": 3,
       "FixedForm": false,
@@ -705,10 +1540,6 @@
       "LocalizationNames": null,
       "CWordList": [
         {
-          "CWordID": "0c6c4f91-c165-4f14-bdb9-58d3bf014fe5",
-          "CWordName": "Urinalysis"
-        },
-        {
           "CWordID": "0d41821f-b145-47e2-b777-4f0e13870285",
           "CWordName": "1252"
         },
@@ -717,48 +1548,67 @@
           "CWordName": "Compliance"
         },
         {
-          "CWordID": "d7e0645f-3b36-4b85-9493-4b3f33cde561",
-          "CWordName": "17-659"
+          "CWordID": "0c6c4f91-c165-4f14-bdb9-58d3bf014fe5",
+          "CWordName": "Urinalysis"
+        },
+        {
+          "CWordID": "e8166eb1-dd84-47ef-b038-222b9ce54435",
+          "CWordName": "1-800-865-1609"
         },
         {
           "CWordID": "dcc70c1c-a8e2-44a5-b33d-f3214f4f5cef",
           "CWordName": "txproof@cyrcahealth.com"
         },
         {
-          "CWordID": "e8166eb1-dd84-47ef-b038-222b9ce54435",
-          "CWordName": "1-800-865-1609"
+          "CWordID": "d7e0645f-3b36-4b85-9493-4b3f33cde561",
+          "CWordName": "17-659"
         }
       ],
       "DocAliasList": [],
       "KeyClassList": [
         {
-          "KeyClassID": "eab87ecf-e6f4-494e-8505-1b8f7bbffbb2",
-          "KeyClassName": "SignatureofPatientorGuardian",
-          "Datatype": "sys.Boolean",
+          "KeyClassID": "649dd7d7-ce25-4ea0-ad7c-f0b76c11aace",
+          "KeyClassName": "FullName",
+          "Datatype": "sys.FullName",
           "Mandatory": 0,
           "Sensitive": false,
           "CreationDate": "2024-02-22 23:03:09.086401",
           "cardinality": "single",
           "Comment": "",
-          "DisplayName": "Signature of Patient or Guardian",
+          "DisplayName": "Full Name",
           "LocalizationNames": null,
           "keyContext": {
             "KeyAliasList": [
               {
-                "KeyAliasID": "d61c2798-c24f-4ee7-bab3-a51bf0c2e99b",
-                "KeyAliasName": "Signature of Patient or Guardian",
+                "KeyAliasID": "d121676b-a83a-4419-936f-ba03327e764d",
+                "KeyAliasName": "Client Name:",
                 "Language": "en"
               },
               {
-                "KeyAliasID": "1fca2e43-1c90-48f3-930d-c1b1f39fb6cc",
-                "KeyAliasName": "Signature of PatientorG uardian",
+                "KeyAliasID": "cd093b8a-432c-471d-a1f4-d245a2088607",
+                "KeyAliasName": "Full Name",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "a7788428-3125-496a-86c1-9d9b28956997",
+                "KeyAliasName": "ClientName",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "9b877779-de1b-4491-81d6-7c446c0debff",
+                "KeyAliasName": "Client Name",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "49149df6-f96d-43fd-9b7b-d00837e466ef",
+                "KeyAliasName": "C lientNam e",
                 "Language": "en"
               }
             ],
             "PatternList": []
           },
           "valueFormats": {
-            "signature": {
+            "text": {
               "extractorList": [],
               "extractorSequence": [],
               "converterList": [],
@@ -769,28 +1619,34 @@
           },
           "validatorList": [
             {
-              "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
-              "implRef": "sys.Boolean.LowConfidenceValidator"
+              "failureReason": "Value is of a wrong type",
+              "severity": "Error",
+              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
+              "implRef": "sys.FullName.DatatypeMismatchValidator"
             },
             {
-              "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
-              "implRef": "sys.Boolean.DatatypeMismatchValidator"
+              "failureReason": "Value confidence lower than the specified threshold",
+              "severity": "Warning",
+              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
+              "implRef": "sys.FullName.LowConfidenceValidator"
             },
             {
-              "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
-              "implRef": "sys.Boolean.RequiredValueValidator"
+              "failureReason": "Required value is missing",
+              "severity": "Error",
+              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
+              "implRef": "sys.FullName.RequiredValueValidator"
             }
           ],
           "validatorLogic": {
             "AND": [
               {
-                "implRef": "sys.Boolean.LowConfidenceValidator"
+                "implRef": "sys.FullName.DatatypeMismatchValidator"
               },
               {
-                "implRef": "sys.Boolean.DatatypeMismatchValidator"
+                "implRef": "sys.FullName.LowConfidenceValidator"
               },
               {
-                "implRef": "sys.Boolean.RequiredValueValidator"
+                "implRef": "sys.FullName.RequiredValueValidator"
               }
             ]
           }
@@ -860,119 +1716,6 @@
               },
               {
                 "implRef": "sys.Numeric.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "5ecfb84a-b4b6-40ed-a572-aa300a583641",
-          "KeyClassName": "FTIKeyword",
-          "Datatype": "sys.String",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "FTI Keyword",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasName": "FTI Keyword",
-                "Language": "en"
-              }
-            ]
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [
-                {
-                  "implId": "e83842f7-97be-4f52-9645-9175b3da0d3f",
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338619167",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "implId": "b999bd1a-d72f-4992-b9c3-4b1fa4fa3f9a",
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338624737",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per)",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "implId": "71afc76c-ce2f-47a1-9ecd-4a7ed76d6541",
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338630588",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(KHPE[358]|KHPD7|BEER|Per IRS|KH\\s?PE)",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "implId": "463eae85-10ce-4877-b9fe-1ad19518432b",
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1712247420322",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per|Per Interface SSA|Per Interface IRS|IRS Per|Per\\s+Inte\\w*\\s+Face\\s+IRS\\s+r)",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                }
-              ],
-              "extractorSequence": [
-                "NewExtractor_1707338619167",
-                "NewExtractor_1707338624737",
-                "NewExtractor_1707338630588",
-                "NewExtractor_1712247420322"
-              ],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
-              "implRef": "sys.String.DatatypeMismatchValidator",
-              "failureReason": "Value is not a string",
-              "severity": "Error"
-            },
-            {
-              "implId": "5b3d19f0-16ee-4ebf-82a8-7887454649ab",
-              "implRef": "sys.String.LowConfidenceValidator",
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning"
-            },
-            {
-              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
-              "implRef": "sys.String.RequiredValueValidator",
-              "failureReason": "Required value is missing",
-              "severity": "Error"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.String.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.String.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.String.RequiredValueValidator"
               }
             ]
           }
@@ -1490,146 +2233,26 @@
           }
         },
         {
-          "KeyClassID": "649dd7d7-ce25-4ea0-ad7c-f0b76c11aace",
-          "KeyClassName": "FullName",
-          "Datatype": "sys.FullName",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Full Name",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "d121676b-a83a-4419-936f-ba03327e764d",
-                "KeyAliasName": "Client Name:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "cd093b8a-432c-471d-a1f4-d245a2088607",
-                "KeyAliasName": "Full Name",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "a7788428-3125-496a-86c1-9d9b28956997",
-                "KeyAliasName": "ClientName",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "9b877779-de1b-4491-81d6-7c446c0debff",
-                "KeyAliasName": "Client Name",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "49149df6-f96d-43fd-9b7b-d00837e466ef",
-                "KeyAliasName": "C lientNam e",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "failureReason": "Value is of a wrong type",
-              "severity": "Error",
-              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
-              "implRef": "sys.FullName.DatatypeMismatchValidator"
-            },
-            {
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning",
-              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
-              "implRef": "sys.FullName.LowConfidenceValidator"
-            },
-            {
-              "failureReason": "Required value is missing",
-              "severity": "Error",
-              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
-              "implRef": "sys.FullName.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.FullName.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.FullName.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.FullName.RequiredValueValidator"
-              }
-            ]
-          }
-        }
-      ],
-      "HeadingList": [],
-      "OptFlags": 3,
-      "FixedForm": false,
-      "ClassificationConfidenceThreshold": 50,
-      "IncludeFeedbackDocuments": false,
-      "FeedbackDocumentsPercentage": 10
-    },
-    {
-      "DocClass": "form1461",
-      "DocClassID": "cbb9e734-0c04-4a45-be8e-61af9740cb63",
-      "Comment": "",
-      "DisplayName": "[feb] form-1461",
-      "LocalizationNames": null,
-      "CWordList": [
-        {
-          "CWordID": "3f96c9f1-e5e0-4b5b-af3a-1bf01f0c3d2e",
-          "CWordName": "1461"
-        },
-        {
-          "CWordID": "cff37298-a6ab-4afb-9343-97dbd75d510b",
-          "CWordName": "AAO"
-        },
-        {
-          "CWordID": "ef946896-ad55-4c9b-9622-e67431a6e6c9",
-          "CWordName": "HEARING"
-        }
-      ],
-      "DocAliasList": [],
-      "KeyClassList": [
-        {
-          "KeyClassID": "3aed4a12-192f-46d6-86e6-52babf7aff46",
-          "KeyClassName": "ClaimantsSignature",
+          "KeyClassID": "eab87ecf-e6f4-494e-8505-1b8f7bbffbb2",
+          "KeyClassName": "SignatureofPatientorGuardian",
           "Datatype": "sys.Boolean",
           "Mandatory": 0,
           "Sensitive": false,
           "CreationDate": "2024-02-22 23:03:09.086401",
           "cardinality": "single",
           "Comment": "",
-          "DisplayName": "Claimant's Signature",
+          "DisplayName": "Signature of Patient or Guardian",
           "LocalizationNames": null,
           "keyContext": {
             "KeyAliasList": [
               {
-                "KeyAliasID": "762683e7-8fea-42f4-86d6-72495aca3aba",
-                "KeyAliasName": "(Claimant's Signature)",
+                "KeyAliasID": "d61c2798-c24f-4ee7-bab3-a51bf0c2e99b",
+                "KeyAliasName": "Signature of Patient or Guardian",
                 "Language": "en"
               },
               {
-                "KeyAliasID": "42c78500-29c3-43df-80a4-27dc39c116e5",
-                "KeyAliasName": "Claimant's Signature",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "b55a9ed9-b600-4ec3-a8cf-20dd8d36890e",
-                "KeyAliasName": "(C lain ant's Signature)",
+                "KeyAliasID": "1fca2e43-1c90-48f3-930d-c1b1f39fb6cc",
+                "KeyAliasName": "Signature of PatientorG uardian",
                 "Language": "en"
               }
             ],
@@ -1673,6 +2296,205 @@
             ]
           }
         },
+        {
+          "KeyClassID": "5ecfb84a-b4b6-40ed-a572-aa300a583641",
+          "KeyClassName": "FTIKeyword",
+          "Datatype": "sys.String",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "FTI Keyword",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasName": "FTI Keyword",
+                "Language": "en"
+              }
+            ]
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [
+                {
+                  "implId": "e83842f7-97be-4f52-9645-9175b3da0d3f",
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338619167",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                },
+                {
+                  "implId": "b999bd1a-d72f-4992-b9c3-4b1fa4fa3f9a",
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338624737",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per)",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                },
+                {
+                  "implId": "71afc76c-ce2f-47a1-9ecd-4a7ed76d6541",
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1707338630588",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(KHPE[358]|KHPD7|BEER|Per IRS|KH\\s?PE)",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                },
+                {
+                  "implId": "463eae85-10ce-4877-b9fe-1ad19518432b",
+                  "name": "New Extractor",
+                  "symbolicName": "NewExtractor_1712247420322",
+                  "description": "",
+                  "namespace": "valueExtractor",
+                  "extractionTool": "regex",
+                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per|Per Interface SSA|Per Interface IRS|IRS Per|Per\\s+Inte\\w*\\s+Face\\s+IRS\\s+r)",
+                  "inline": true,
+                  "isValueWithOptionalKeyAlias": true
+                }
+              ],
+              "extractorSequence": [
+                "NewExtractor_1707338619167",
+                "NewExtractor_1707338624737",
+                "NewExtractor_1707338630588",
+                "NewExtractor_1712247420322"
+              ],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [
+                {
+                  "name": "New Formatter",
+                  "symbolicName": "NewFormatter_1713637718168",
+                  "description": "",
+                  "namespace": "formatter",
+                  "extractionTool": "replacetextformatter",
+                  "stringToFind": "per inte face IRS r",
+                  "replaceWith": "per interface IRS",
+                  "implId": "e03a3696-db2d-43d2-8166-7d9f1daccf9b",
+                  "inline": true
+                },
+                {
+                  "name": "New Formatter",
+                  "symbolicName": "NewFormatter_1713637754542",
+                  "description": "",
+                  "namespace": "formatter",
+                  "extractionTool": "replacetextformatter",
+                  "stringToFind": "PE8",
+                  "replaceWith": "KHPE8",
+                  "implId": "2e2ec340-7976-49d9-a488-b7a955c03b40",
+                  "inline": true
+                },
+                {
+                  "name": "New Formatter",
+                  "symbolicName": "NewFormatter_1713637774794",
+                  "description": "",
+                  "namespace": "formatter",
+                  "extractionTool": "replacetextformatter",
+                  "stringToFind": "KH PE",
+                  "replaceWith": "KHPE8",
+                  "implId": "8b62bdbe-5992-4a8b-9eec-437b832fb728",
+                  "inline": true
+                },
+                {
+                  "name": "New Formatter",
+                  "symbolicName": "NewFormatter_1713637798595",
+                  "description": "",
+                  "namespace": "formatter",
+                  "extractionTool": "replacetextformatter",
+                  "stringToFind": "K PE8",
+                  "replaceWith": "KHPE8",
+                  "implId": "084a0175-f3fc-4e39-8224-fea7cd6923e7",
+                  "inline": true
+                }
+              ],
+              "formatterSequence": [
+                "NewFormatter_1713637718168",
+                "NewFormatter_1713637754542",
+                "NewFormatter_1713637774794",
+                "NewFormatter_1713637798595"
+              ]
+            }
+          },
+          "validatorList": [
+            {
+              "name": "Low Confidence Validator",
+              "symbolicName": "LowConfidenceValidator_1713637889908",
+              "description": "Low Confidence Validator",
+              "namespace": "validator",
+              "extractionTool": "confidencevalidator",
+              "threshold": 50,
+              "implId": "ab979e2f-15c2-4c80-825e-552601036504",
+              "inline": true,
+              "failureReason": "Value confidence lower than the specified threshold",
+              "severity": "Warning"
+            },
+            {
+              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
+              "implRef": "sys.String.DatatypeMismatchValidator",
+              "failureReason": "Value is not a string",
+              "severity": "Error"
+            },
+            {
+              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
+              "implRef": "sys.String.RequiredValueValidator",
+              "failureReason": "Required value is missing",
+              "severity": "Error"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.String.LowConfidenceValidator_1713637889908"
+              },
+              {
+                "implRef": "sys.String.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.String.RequiredValueValidator"
+              }
+            ]
+          }
+        }
+      ],
+      "HeadingList": [],
+      "OptFlags": 3,
+      "FixedForm": false,
+      "ClassificationConfidenceThreshold": 50,
+      "IncludeFeedbackDocuments": false,
+      "FeedbackDocumentsPercentage": 10
+    },
+    {
+      "DocClass": "form1461",
+      "DocClassID": "cbb9e734-0c04-4a45-be8e-61af9740cb63",
+      "Comment": "",
+      "DisplayName": "[feb] form-1461",
+      "LocalizationNames": null,
+      "CWordList": [
+        {
+          "CWordID": "3f96c9f1-e5e0-4b5b-af3a-1bf01f0c3d2e",
+          "CWordName": "1461"
+        },
+        {
+          "CWordID": "cff37298-a6ab-4afb-9343-97dbd75d510b",
+          "CWordName": "AAO"
+        },
+        {
+          "CWordID": "ef946896-ad55-4c9b-9622-e67431a6e6c9",
+          "CWordName": "HEARING"
+        }
+      ],
+      "DocAliasList": [],
+      "KeyClassList": [
         {
           "KeyClassID": "29cf6d7a-ffa2-47e9-ba88-bdc31e5d7aab",
           "KeyClassName": "ForDepartmentUseOnly",
@@ -1860,6 +2682,75 @@
           ]
         },
         {
+          "KeyClassID": "b745bc73-42e3-421f-b2b2-703d11e435f0",
+          "KeyClassName": "ClientFullName",
+          "Datatype": "sys.FullName",
+          "Mandatory": 0,
+          "Sensitive": false,
+          "CreationDate": "2024-02-22 23:03:09.086401",
+          "cardinality": "single",
+          "Comment": "",
+          "DisplayName": "Client Full Name",
+          "LocalizationNames": null,
+          "keyContext": {
+            "KeyAliasList": [
+              {
+                "KeyAliasID": "6d31cd39-2ec5-4d10-b3c6-32187423e81c",
+                "KeyAliasName": "(Print Claimant's Name)",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "e47680b7-4ac2-489c-971a-bd2fb52883ba",
+                "KeyAliasName": "Client Full Name",
+                "Language": "en"
+              },
+              {
+                "KeyAliasID": "060d0274-03c6-4c07-aa0d-7aee46c1fcd2",
+                "KeyAliasName": "(PrintC lain ant's Nam e)",
+                "Language": "en"
+              }
+            ],
+            "PatternList": []
+          },
+          "valueFormats": {
+            "text": {
+              "extractorList": [],
+              "extractorSequence": [],
+              "converterList": [],
+              "converterSequence": [],
+              "formatterList": [],
+              "formatterSequence": []
+            }
+          },
+          "validatorList": [
+            {
+              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
+              "implRef": "sys.FullName.LowConfidenceValidator"
+            },
+            {
+              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
+              "implRef": "sys.FullName.DatatypeMismatchValidator"
+            },
+            {
+              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
+              "implRef": "sys.FullName.RequiredValueValidator"
+            }
+          ],
+          "validatorLogic": {
+            "AND": [
+              {
+                "implRef": "sys.FullName.LowConfidenceValidator"
+              },
+              {
+                "implRef": "sys.FullName.DatatypeMismatchValidator"
+              },
+              {
+                "implRef": "sys.FullName.RequiredValueValidator"
+              }
+            ]
+          }
+        },
+        {
           "KeyClassID": "5da10011-4926-4f17-97ee-960b94305fb6",
           "KeyClassName": "FTIKeyword",
           "Datatype": "sys.String",
@@ -1963,38 +2854,38 @@
           }
         },
         {
-          "KeyClassID": "b745bc73-42e3-421f-b2b2-703d11e435f0",
-          "KeyClassName": "ClientFullName",
-          "Datatype": "sys.FullName",
+          "KeyClassID": "3aed4a12-192f-46d6-86e6-52babf7aff46",
+          "KeyClassName": "ClaimantsSignature",
+          "Datatype": "sys.Boolean",
           "Mandatory": 0,
           "Sensitive": false,
           "CreationDate": "2024-02-22 23:03:09.086401",
           "cardinality": "single",
           "Comment": "",
-          "DisplayName": "Client Full Name",
+          "DisplayName": "Claimant's Signature",
           "LocalizationNames": null,
           "keyContext": {
             "KeyAliasList": [
               {
-                "KeyAliasID": "6d31cd39-2ec5-4d10-b3c6-32187423e81c",
-                "KeyAliasName": "(Print Claimant's Name)",
+                "KeyAliasID": "762683e7-8fea-42f4-86d6-72495aca3aba",
+                "KeyAliasName": "(Claimant's Signature)",
                 "Language": "en"
               },
               {
-                "KeyAliasID": "e47680b7-4ac2-489c-971a-bd2fb52883ba",
-                "KeyAliasName": "Client Full Name",
+                "KeyAliasID": "42c78500-29c3-43df-80a4-27dc39c116e5",
+                "KeyAliasName": "Claimant's Signature",
                 "Language": "en"
               },
               {
-                "KeyAliasID": "060d0274-03c6-4c07-aa0d-7aee46c1fcd2",
-                "KeyAliasName": "(PrintC lain ant's Nam e)",
+                "KeyAliasID": "b55a9ed9-b600-4ec3-a8cf-20dd8d36890e",
+                "KeyAliasName": "(C lain ant's Signature)",
                 "Language": "en"
               }
             ],
             "PatternList": []
           },
           "valueFormats": {
-            "text": {
+            "signature": {
               "extractorList": [],
               "extractorSequence": [],
               "converterList": [],
@@ -2005,28 +2896,28 @@
           },
           "validatorList": [
             {
-              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
-              "implRef": "sys.FullName.LowConfidenceValidator"
+              "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
+              "implRef": "sys.Boolean.LowConfidenceValidator"
             },
             {
-              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
-              "implRef": "sys.FullName.DatatypeMismatchValidator"
+              "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
+              "implRef": "sys.Boolean.DatatypeMismatchValidator"
             },
             {
-              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
-              "implRef": "sys.FullName.RequiredValueValidator"
+              "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
+              "implRef": "sys.Boolean.RequiredValueValidator"
             }
           ],
           "validatorLogic": {
             "AND": [
               {
-                "implRef": "sys.FullName.LowConfidenceValidator"
+                "implRef": "sys.Boolean.LowConfidenceValidator"
               },
               {
-                "implRef": "sys.FullName.DatatypeMismatchValidator"
+                "implRef": "sys.Boolean.DatatypeMismatchValidator"
               },
               {
-                "implRef": "sys.FullName.RequiredValueValidator"
+                "implRef": "sys.Boolean.RequiredValueValidator"
               }
             ]
           }
@@ -2047,6 +2938,14 @@
       "LocalizationNames": null,
       "CWordList": [
         {
+          "CWordID": "a3381d14-d619-4803-b3ac-ccd0b7605e83",
+          "CWordName": "Intake"
+        },
+        {
+          "CWordID": "bb7c3355-7ddd-4940-ac77-7313a9e7c668",
+          "CWordName": "O/I"
+        },
+        {
           "CWordID": "b6772bac-9aad-4224-9a8a-cdcd4881bbea",
           "CWordName": "ORIENTATION/INTAKE"
         },
@@ -2063,16 +2962,8 @@
           "CWordName": "1244"
         },
         {
-          "CWordID": "a3381d14-d619-4803-b3ac-ccd0b7605e83",
-          "CWordName": "Intake"
-        },
-        {
           "CWordID": "6d086d0c-32eb-4ffb-b0a6-94fa63f2362c",
           "CWordName": "Orientation"
-        },
-        {
-          "CWordID": "bb7c3355-7ddd-4940-ac77-7313a9e7c668",
-          "CWordName": "O/I"
         }
       ],
       "DocAliasList": [],
@@ -2614,1034 +3505,6 @@
       "FeedbackDocumentsPercentage": 10
     },
     {
-      "DocClass": "febform806",
-      "DocClassID": "a6bfccce-603c-440b-a8e4-207ed2781c16",
-      "Comment": "",
-      "DisplayName": "[feb] form-806",
-      "LocalizationNames": null,
-      "CWordList": [
-        {
-          "CWordID": "a1db19ac-fc32-48c2-bbbf-be2a8b2e1614",
-          "CWordName": "806"
-        },
-        {
-          "CWordID": "b3f53760-2f60-43da-8f31-0df8286f5731",
-          "CWordName": "Hrs/Week"
-        },
-        {
-          "CWordID": "78904b6e-c2ae-40d2-895d-f7f83caf847d",
-          "CWordName": "first-to-work"
-        },
-        {
-          "CWordID": "4c930ace-3b5b-4422-a6de-df8c9c0691dd",
-          "CWordName": "17-794.1"
-        }
-      ],
-      "DocAliasList": [],
-      "KeyClassList": [
-        {
-          "KeyClassID": "d093e24e-3eef-4334-b5e4-879ca749fd49",
-          "KeyClassName": "FullName",
-          "Datatype": "sys.FullName",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Full Name",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "35089e29-57aa-4b03-a0a5-6f460b68c0ab",
-                "KeyAliasName": "Participant Name:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "e80a068e-9489-4d92-96f5-d8bc88b1d35c",
-                "KeyAliasName": "Full Name",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "failureReason": "Value is of a wrong type",
-              "severity": "Error",
-              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
-              "implRef": "sys.FullName.DatatypeMismatchValidator"
-            },
-            {
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning",
-              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
-              "implRef": "sys.FullName.LowConfidenceValidator"
-            },
-            {
-              "failureReason": "Required value is missing",
-              "severity": "Error",
-              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
-              "implRef": "sys.FullName.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.FullName.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.FullName.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.FullName.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "5f86b8ce-2a1b-4fd8-906b-003d81bce8e8",
-          "KeyClassName": "Unit",
-          "Datatype": "sys.String",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Unit",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "4359611b-03ff-4a6d-bce1-cfa5cccada28",
-                "KeyAliasName": "Unit Name and Address:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "2243149c-e5c6-489d-ad35-916cce64dc84",
-                "KeyAliasName": "Unit",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "5b3d19f0-16ee-4ebf-82a8-7887454649ab",
-              "implRef": "sys.String.LowConfidenceValidator"
-            },
-            {
-              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
-              "implRef": "sys.String.DatatypeMismatchValidator"
-            },
-            {
-              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
-              "implRef": "sys.String.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.String.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.String.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.String.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "56ac57e8-c7cd-4086-b84b-e4a8b8b19db4",
-          "KeyClassName": "Signature",
-          "Datatype": "sys.Boolean",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Signature",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "298de7e1-7a2c-4abc-8e1e-567de560c5a5",
-                "KeyAliasName": "Signature of Participant",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "e7772b4a-d8bb-4408-8752-618f13ccb230",
-                "KeyAliasName": "Signature",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "signature": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
-              "implRef": "sys.Boolean.LowConfidenceValidator"
-            },
-            {
-              "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
-              "implRef": "sys.Boolean.DatatypeMismatchValidator"
-            },
-            {
-              "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
-              "implRef": "sys.Boolean.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.Boolean.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.Boolean.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.Boolean.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "0bcf9b4c-a1f7-45fe-a8c8-40ecb3d3024e",
-          "KeyClassName": "EMail",
-          "Datatype": "sys.EmailAddress",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "E-Mail",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "aa30a706-b8ff-45e1-9f40-d3bf34318a44",
-                "KeyAliasName": "E-Mail:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "c1ee1b13-9ddf-4ed2-b077-1c64c1908b21",
-                "KeyAliasName": "E-Mail",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "a2f6f23a-1bc4-402b-b058-f35ef56adf6e",
-              "implRef": "sys.EmailAddress.LowConfidenceValidator"
-            },
-            {
-              "implId": "560c69d7-1d57-4f84-a5fb-d22ea4ee11ad",
-              "implRef": "sys.EmailAddress.DatatypeMismatchValidator"
-            },
-            {
-              "implId": "061b848f-88cf-47eb-88f1-a486622952dc",
-              "implRef": "sys.EmailAddress.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.EmailAddress.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.EmailAddress.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.EmailAddress.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "64e90561-903a-494f-86ca-ce687749c801",
-          "KeyClassName": "ClientID",
-          "Datatype": "sys.Numeric",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Client ID",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "4dcb7a0e-c717-4841-93d3-7d62cf1edb71",
-                "KeyAliasName": "Client ID",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "fc3963d7-a880-4d61-a773-0838414c381d",
-                "KeyAliasName": "Client ID:",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning",
-              "implId": "e44e3001-85b8-400e-81e0-6498fd9ec559",
-              "implRef": "sys.Numeric.LowConfidenceValidator"
-            },
-            {
-              "failureReason": "Value is not Numeric",
-              "severity": "Error",
-              "implId": "fea04bcf-1d40-49b0-8533-d5c155232d28",
-              "implRef": "sys.Numeric.DatatypeMismatchValidator"
-            },
-            {
-              "failureReason": "Required value is missing",
-              "severity": "Error",
-              "implId": "668a028d-ba0b-480d-a249-cb4f433e4d4d",
-              "implRef": "sys.Numeric.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.Numeric.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.Numeric.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.Numeric.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "8c8a99c6-bd3a-4a80-9df7-7c6f4e9d858e",
-          "KeyClassName": "FTIKeyword",
-          "Datatype": "sys.String",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "FTI Keyword",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "d5334c43-6ede-433d-b337-1027231a8e8c",
-                "KeyAliasName": "FTI Keyword",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338361684",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(KHPE[358]|KHPD7|BEER|Per IRS)",
-                  "implId": "fe5645c5-ab98-4ef0-9403-43333096417c",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338374121",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per)",
-                  "implId": "629fae0c-32df-40fd-8e50-5e9fcf519bc9",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338383716",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
-                  "implId": "7a629d16-8a35-46b7-b896-5d518927bd92",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                }
-              ],
-              "extractorSequence": [
-                "NewExtractor_1707338361684",
-                "NewExtractor_1707338374121",
-                "NewExtractor_1707338383716"
-              ],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "failureReason": "Value is not a string",
-              "severity": "Error",
-              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
-              "implRef": "sys.String.DatatypeMismatchValidator"
-            },
-            {
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning",
-              "implId": "5b3d19f0-16ee-4ebf-82a8-7887454649ab",
-              "implRef": "sys.String.LowConfidenceValidator"
-            },
-            {
-              "failureReason": "Required value is missing",
-              "severity": "Error",
-              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
-              "implRef": "sys.String.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.String.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.String.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.String.RequiredValueValidator"
-              }
-            ]
-          }
-        }
-      ],
-      "HeadingList": [],
-      "OptFlags": 3,
-      "FixedForm": false,
-      "ClassificationConfidenceThreshold": 70,
-      "IncludeFeedbackDocuments": false,
-      "FeedbackDocumentsPercentage": 10
-    },
-    {
-      "DocClass": "febform1257",
-      "DocClassID": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8",
-      "Comment": "",
-      "DisplayName": "[feb] form-1257",
-      "LocalizationNames": null,
-      "CWordList": [
-        {
-          "CWordID": "9f01df35-6e74-479b-9dbb-3170b91e5ecb",
-          "CWordName": "EW"
-        },
-        {
-          "CWordID": "5a0c0966-27a8-4352-968f-a972ff7c3419",
-          "CWordName": "FTW"
-        },
-        {
-          "CWordID": "2e7069a4-0510-463c-87ea-bb61fc4521b2",
-          "CWordName": "VR"
-        },
-        {
-          "CWordID": "b17e9366-e900-41da-a409-45c35ecd286f",
-          "CWordName": "CCCH"
-        },
-        {
-          "CWordID": "65ac880d-01df-4744-ae0a-cd4709368f12",
-          "CWordName": "1257"
-        },
-        {
-          "CWordID": "3eec3c72-0c40-4e0b-82ef-12db4605da51",
-          "CWordName": "TANF"
-        }
-      ],
-      "DocAliasList": [],
-      "KeyClassList": [
-        {
-          "KeyClassID": "707f04e7-8090-4e3f-bf08-396da6f93796",
-          "KeyClassName": "FTIKeyword",
-          "Datatype": "sys.String",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "FTI Keyword",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "0e199742-959b-4357-9600-f1750621b669",
-                "KeyAliasName": "FTI Keyword",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338925827",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(KHPE[358]|KHPD7|BEER|Per IRS)",
-                  "implId": "38a1e252-4974-41cc-94e6-a399dc65e28a",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338930462",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per SSA|IEVS|Unearned Income Report|SSA Per|Per IVES|Interface SSA Per|Interface IRS Per)",
-                  "implId": "81f89ff3-bbed-4d88-b258-1125808d5875",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                },
-                {
-                  "name": "New Extractor",
-                  "symbolicName": "NewExtractor_1707338934632",
-                  "description": "",
-                  "namespace": "valueExtractor",
-                  "extractionTool": "regex",
-                  "pattern": "(?i)(Per Interface SSA|Per Interface IRS|IRS Per)",
-                  "implId": "2d9b2abb-e915-46a0-b7a0-4ecf3de49366",
-                  "inline": true,
-                  "isValueWithOptionalKeyAlias": true
-                }
-              ],
-              "extractorSequence": [
-                "NewExtractor_1707338925827",
-                "NewExtractor_1707338930462",
-                "NewExtractor_1707338934632"
-              ],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "failureReason": "Value is not a string",
-              "severity": "Error",
-              "implId": "317e08b7-00de-40fc-89f9-5ce590ec6c1c",
-              "implRef": "sys.String.DatatypeMismatchValidator"
-            },
-            {
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning",
-              "implId": "5b3d19f0-16ee-4ebf-82a8-7887454649ab",
-              "implRef": "sys.String.LowConfidenceValidator"
-            },
-            {
-              "failureReason": "Required value is missing",
-              "severity": "Error",
-              "implId": "ce013527-9101-46f1-bc11-40f6751a368b",
-              "implRef": "sys.String.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.String.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.String.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.String.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "c7401ef8-2640-4ff5-af60-ac87f36e4204",
-          "KeyClassName": "FullName",
-          "Datatype": "sys.FullName",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Full Name",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "31bae64d-9e81-4f94-b42b-3e7797fc2751",
-                "KeyAliasName": "Client name:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "d6e8acd1-2357-490f-8856-8082e3465d21",
-                "KeyAliasName": "Full Name",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "ebd9c670-b38b-4f91-be12-18329682b6f6",
-                "KeyAliasName": "Clentname",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "failureReason": "Value is of a wrong type",
-              "severity": "Error",
-              "implId": "e0a7e16f-c48d-4ab8-81fa-3367ecf913fb",
-              "implRef": "sys.FullName.DatatypeMismatchValidator"
-            },
-            {
-              "failureReason": "Value confidence lower than the specified threshold",
-              "severity": "Warning",
-              "implId": "5955e05d-d408-40d0-87f7-c10b3a6ece66",
-              "implRef": "sys.FullName.LowConfidenceValidator"
-            },
-            {
-              "failureReason": "Required value is missing",
-              "severity": "Error",
-              "implId": "5f6f2009-d19d-46ab-ba0d-2886047bbc13",
-              "implRef": "sys.FullName.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.FullName.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.FullName.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.FullName.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "baece483-df6d-4b8d-aaef-cbf77d0090c7",
-          "KeyClassName": "Unit",
-          "Datatype": "sys.StreetName",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Unit",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "b2af3ce9-3814-4450-b79e-811386c2cbc6",
-                "KeyAliasName": "Unit:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "faa7ef52-e426-4d9e-a862-8a6cde18b12f",
-                "KeyAliasName": "Unit",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "457dedc1-eb7c-4500-8243-ea3148c08f11",
-              "implRef": "sys.StreetName.LowConfidenceValidator"
-            },
-            {
-              "implId": "84fe4c54-44df-4bf1-a939-04946c3ed55f",
-              "implRef": "sys.StreetName.DatatypeMismatchValidator"
-            },
-            {
-              "implId": "e3d2afeb-27ef-4a5d-ab02-35ca6340faec",
-              "implRef": "sys.StreetName.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.StreetName.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.StreetName.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.StreetName.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "0bccfb66-5d9e-48eb-87c9-3eb282b5841e",
-          "KeyClassName": "CaseNumber",
-          "Datatype": "sys.Numeric",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Case Number",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "72e3dd3a-8a29-49a3-87a0-d9e6f2e694b9",
-                "KeyAliasName": "Case number:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "ce424d4b-0cf4-4fc0-bde2-9fabc40e8d88",
-                "KeyAliasName": "Case Number",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "8fffda3a-4268-4aea-bb32-eabfca1b0ef0",
-                "KeyAliasName": "Case num ber",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "e44e3001-85b8-400e-81e0-6498fd9ec559",
-              "implRef": "sys.Numeric.LowConfidenceValidator"
-            },
-            {
-              "implId": "fea04bcf-1d40-49b0-8533-d5c155232d28",
-              "implRef": "sys.Numeric.DatatypeMismatchValidator"
-            },
-            {
-              "implId": "668a028d-ba0b-480d-a249-cb4f433e4d4d",
-              "implRef": "sys.Numeric.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "sys.Numeric.LowConfidenceValidator"
-              },
-              {
-                "implRef": "sys.Numeric.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "sys.Numeric.RequiredValueValidator"
-              }
-            ]
-          }
-        },
-        {
-          "KeyClassID": "fa3af9d9-8fd8-4afb-8ad9-525298c8c48d",
-          "KeyClassName": "ParticipationStatus",
-          "Datatype": "SHDHSFT.ParticipationStatus",
-          "Mandatory": 0,
-          "Sensitive": false,
-          "CreationDate": "2024-02-22 23:03:09.086401",
-          "cardinality": "single",
-          "Comment": "",
-          "DisplayName": "Participation Status",
-          "LocalizationNames": null,
-          "keyContext": {
-            "KeyAliasList": [
-              {
-                "KeyAliasID": "8f4acdd7-0063-47af-b069-bb9ca9f4df43",
-                "KeyAliasName": "Participation Status:",
-                "Language": "en"
-              },
-              {
-                "KeyAliasID": "b717e73b-ee36-41ef-8910-d8f66da783df",
-                "KeyAliasName": "Participation Status",
-                "Language": "en"
-              }
-            ],
-            "PatternList": []
-          },
-          "valueFormats": {
-            "text": {
-              "extractorList": [],
-              "extractorSequence": [],
-              "converterList": [],
-              "converterSequence": [],
-              "formatterList": [],
-              "formatterSequence": []
-            }
-          },
-          "validatorList": [
-            {
-              "implId": "4c48bf12-7816-4e9d-be0f-3be2f408cb5c",
-              "implRef": "SHDHSFT.ParticipationStatus.LowConfidenceValidator"
-            },
-            {
-              "implId": "ce86fb17-a339-4241-806c-f25120b7e6c1",
-              "implRef": "SHDHSFT.ParticipationStatus.DatatypeMismatchValidator"
-            },
-            {
-              "implId": "24c7ddec-ccdd-426f-91db-0f7e745dfb25",
-              "implRef": "SHDHSFT.ParticipationStatus.RequiredValueValidator"
-            }
-          ],
-          "validatorLogic": {
-            "AND": [
-              {
-                "implRef": "SHDHSFT.ParticipationStatus.LowConfidenceValidator"
-              },
-              {
-                "implRef": "SHDHSFT.ParticipationStatus.DatatypeMismatchValidator"
-              },
-              {
-                "implRef": "SHDHSFT.ParticipationStatus.RequiredValueValidator"
-              }
-            ]
-          },
-          "attributeList": [
-            {
-              "DataFixup": true,
-              "ValueRegion": "text",
-              "attrContext": {
-                "AttrAliasList": [
-                  {
-                    "AttrAliasName": "Did not meet compliance period, deny TANF",
-                    "Language": "en"
-                  },
-                  {
-                    "AttrAliasName": "D id notm eet.com ptance perod, deny TANF.",
-                    "Language": "en"
-                  }
-                ],
-                "PatternList": []
-              },
-              "attrId": "44e4171d-f2e9-41a1-b112-52e1318e8952",
-              "attrName": "DidnotmeetcomplianceperioddenyTANF",
-              "attrRef": "SHDHSFT.ParticipationStatus.DidnotmeetcomplianceperioddenyTANF",
-              "cardinality": "single",
-              "comment": "",
-              "creationDate": "2024-02-22 23:03:09.086401",
-              "displayName": "Did not meet compliance period, deny TANF",
-              "localizationNames": null,
-              "mandatory": 0,
-              "sensitive": false,
-              "validatorList": [
-                {
-                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
-                  "implRef": "sys.Boolean.LowConfidenceValidator"
-                },
-                {
-                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
-                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                },
-                {
-                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
-                  "implRef": "sys.Boolean.RequiredValueValidator"
-                }
-              ],
-              "validatorLogic": {
-                "AND": [
-                  {
-                    "implRef": "sys.Boolean.LowConfidenceValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.RequiredValueValidator"
-                  }
-                ]
-              },
-              "valueFormats": {
-                "checkbox": {
-                  "extractorList": [],
-                  "extractorSequence": [],
-                  "converterList": [],
-                  "converterSequence": [],
-                  "formatterList": [],
-                  "formatterSequence": []
-                }
-              }
-            },
-            {
-              "DataFixup": true,
-              "ValueRegion": "text",
-              "attrContext": {
-                "AttrAliasList": [
-                  {
-                    "AttrAliasName": "Met compliance period, approve TANF",
-                    "Language": "en"
-                  }
-                ],
-                "PatternList": []
-              },
-              "attrId": "5b92697f-a359-4c8c-8134-6da7b9de45a6",
-              "attrName": "MetcomplianceperiodapproveTANF",
-              "attrRef": "SHDHSFT.ParticipationStatus.MetcomplianceperiodapproveTANF",
-              "cardinality": "single",
-              "comment": "",
-              "creationDate": "2024-02-22 23:03:09.086401",
-              "displayName": "Met compliance period, approve TANF",
-              "localizationNames": null,
-              "mandatory": 0,
-              "sensitive": false,
-              "validatorList": [
-                {
-                  "implId": "dce9864c-bef4-403c-a98a-290d86562e37",
-                  "implRef": "sys.Boolean.LowConfidenceValidator"
-                },
-                {
-                  "implId": "43275576-3e6f-4a6e-93a3-0e0ed76e1486",
-                  "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                },
-                {
-                  "implId": "4dd0c8e7-da16-4923-9e2c-c269a2572849",
-                  "implRef": "sys.Boolean.RequiredValueValidator"
-                }
-              ],
-              "validatorLogic": {
-                "AND": [
-                  {
-                    "implRef": "sys.Boolean.LowConfidenceValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.DatatypeMismatchValidator"
-                  },
-                  {
-                    "implRef": "sys.Boolean.RequiredValueValidator"
-                  }
-                ]
-              },
-              "valueFormats": {
-                "checkbox": {
-                  "extractorList": [],
-                  "extractorSequence": [],
-                  "converterList": [],
-                  "converterSequence": [],
-                  "formatterList": [],
-                  "formatterSequence": []
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "HeadingList": [],
-      "OptFlags": 3,
-      "FixedForm": false,
-      "ClassificationConfidenceThreshold": 70,
-      "IncludeFeedbackDocuments": false,
-      "FeedbackDocumentsPercentage": 10
-    },
-    {
-      "DocClass": "febform1258",
-      "DocClassID": "a6f796ff-9e53-4bd6-a9af-2399615c8420",
-      "Comment": "",
-      "DisplayName": "[feb] form-1258",
-      "LocalizationNames": null,
-      "CWordList": [],
-      "DocAliasList": [],
-      "KeyClassList": [],
-      "HeadingList": [],
-      "OptFlags": 3,
-      "FixedForm": false,
-      "ClassificationConfidenceThreshold": 70,
-      "IncludeFeedbackDocuments": false,
-      "FeedbackDocumentsPercentage": 10
-    },
-    {
       "DocClass": "aprDOCR5",
       "DocClassID": "5a040975-d2d3-4489-a7e6-851a2f61c1ed",
       "Comment": "",
@@ -3978,12 +3841,12 @@
   "OptFlags": 3,
   "OntologyType": "verbose",
   "UpdateTimestamp": {
-    "Ontology": "2024-04-19 04:36:02.506382",
+    "Ontology": "2024-04-26 04:45:58.190220",
     "TrainingData": [
       {
         "DocClassId": "cb1744ff-2aef-4258-9521-255aab17225a",
-        "ClassificationTrainingDataUpdateTS": "2024-04-09 20:35:26.549370",
-        "ExtractionTrainingDataUpdateTS": "2024-04-19 04:16:28.406198"
+        "ClassificationTrainingDataUpdateTS": "2024-04-20 17:41:34.976793",
+        "ExtractionTrainingDataUpdateTS": "2024-04-20 17:41:34.976793"
       },
       {
         "DocClassId": "5a040975-d2d3-4489-a7e6-851a2f61c1ed",
@@ -3991,14 +3854,9 @@
         "ExtractionTrainingDataUpdateTS": "2024-04-09 20:25:52.693835"
       },
       {
-        "DocClassId": "646496af-248a-433d-bf0a-7395e4cf3c4d",
-        "ClassificationTrainingDataUpdateTS": "2024-04-01 19:15:53.612253",
-        "ExtractionTrainingDataUpdateTS": "2024-04-01 19:15:53.612253"
-      },
-      {
         "DocClassId": "f3aa80ef-94df-429d-9c25-0d72c9be4a3a",
         "ClassificationTrainingDataUpdateTS": "2024-04-04 15:27:32.323896",
-        "ExtractionTrainingDataUpdateTS": "2024-04-04 17:50:57.596379"
+        "ExtractionTrainingDataUpdateTS": "2024-04-20 17:53:53.759975"
       },
       {
         "DocClassId": "cbb9e734-0c04-4a45-be8e-61af9740cb63",
@@ -4019,21 +3877,6 @@
         "DocClassId": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8",
         "ClassificationTrainingDataUpdateTS": "2024-02-13 10:43:27.905025",
         "ExtractionTrainingDataUpdateTS": "2024-02-13 10:49:58.948942"
-      },
-      {
-        "DocClassId": "a6f796ff-9e53-4bd6-a9af-2399615c8420",
-        "ClassificationTrainingDataUpdateTS": "2024-02-07 13:50:05.761410",
-        "ExtractionTrainingDataUpdateTS": "2024-02-07 13:50:05.761410"
-      },
-      {
-        "DocClassId": "eefc48ca-7dc8-444b-a760-131f20212183",
-        "ClassificationTrainingDataUpdateTS": "2024-02-07 13:52:32.255810",
-        "ExtractionTrainingDataUpdateTS": "2024-02-07 13:52:32.255810"
-      },
-      {
-        "DocClassId": "06db814a-3a41-489a-8d0b-f7276f234892",
-        "ClassificationTrainingDataUpdateTS": "2024-02-07 13:53:02.162570",
-        "ExtractionTrainingDataUpdateTS": "2024-02-07 13:53:02.162570"
       },
       {
         "DocClassId": "5ef6f4fc-79f1-43c0-aaf2-15957cca81f8",

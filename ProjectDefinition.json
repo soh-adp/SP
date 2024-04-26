@@ -19,11 +19,6 @@
   ],
   "ba_contentDefinitions": [
     {
-      "$ref": "CD_febform1240.json",
-      "title": "[feb] form-1240",
-      "caDocTypeId": "646496af-248a-433d-bf0a-7395e4cf3c4d"
-    },
-    {
       "$ref": "CD_febform1252.json",
       "title": "[feb] form-1252",
       "caDocTypeId": "f3aa80ef-94df-429d-9c25-0d72c9be4a3a"
@@ -49,24 +44,9 @@
       "caDocTypeId": "4fb31b8d-314a-4544-8ea8-6ae8429f9db8"
     },
     {
-      "$ref": "CD_febform1258.json",
-      "title": "[feb] form-1258",
-      "caDocTypeId": "a6f796ff-9e53-4bd6-a9af-2399615c8420"
-    },
-    {
       "$ref": "CD_febform1271.json",
       "title": "[feb] form-1271",
       "caDocTypeId": "5ef6f4fc-79f1-43c0-aaf2-15957cca81f8"
-    },
-    {
-      "$ref": "CD_febform1276.json",
-      "title": "[feb] form-1276",
-      "caDocTypeId": "eefc48ca-7dc8-444b-a760-131f20212183"
-    },
-    {
-      "$ref": "CD_febform1313A.json",
-      "title": "[feb] form-1313A",
-      "caDocTypeId": "06db814a-3a41-489a-8d0b-f7276f234892"
     },
     {
       "$ref": "CD_aprDOCR5.json",
@@ -82,10 +62,12 @@
   "ba_caDefinitions": "caDefinitions.json",
   "ba_caProjectDescriptor": "d6b5a5e6-cb89-43fe-9248-22591b655e86",
   "ba_caMLModel": "MLmodel.zip",
-  "ba_snapshotName": "v15-2024-04-19-1535",
-  "ba_versionNotes": "review test samples",
-  "ba_versionId": "ef21aa6c-2e25-48c2-9a31-ebaacd3e77ec",
+  "ba_snapshotName": "v16-2024-04-26-0458",
+  "ba_versionNotes": "snapshot for scaled testing",
+  "ba_versionId": "5fa2708c-11b6-4ae2-adac-ea9331817e00",
   "ba_deploy_repo_id": "DEVOS1",
-  "ba_caClassificationModelTrainingId": "f50821b0-fe78-44d6-9ab2-c82940aa0dab",
-  "ba_caDataExtractionModelTrainingId": "53024f70-de7c-45da-b9bb-c307c36252f7"
+  "ba_caClassificationModelTrainingId": "1737fdb2-6b25-41dd-bbb0-61ee57d1dbcf",
+  "ba_caDataExtractionModelTrainingId": "18812006-3931-450d-a410-5f62df34950f",
+  "ba_caDeployedClassificationModelTrainingId": "f50821b0-fe78-44d6-9ab2-c82940aa0dab",
+  "ba_caDeployedDataExtractionModelTrainingId": "53024f70-de7c-45da-b9bb-c307c36252f7"
 }
